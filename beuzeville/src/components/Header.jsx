@@ -1,64 +1,68 @@
 import { useState } from 'react'
-import reactLogs from './../assets/soleil.png'
+import reactLogs from './../assets/soleil.svg'
 import reactLogos from './../assets/lune.png'
 import './../App.css'
+
+
+import { Accessibilite } from './Accessibilite.jsx'
 export function Header(props){
     const [DarkMode, setDarkMode] = useState(false)
-    const [imageDark, setImageDark] = useState(reactLogs)
+    const [imageDark, setImageDark] = useState(reactLogos)
+    const [backgroundColor, setbackground]=useState('white')
+    const [color, setcolor]=useState('black')
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+   
+
   
   
     function ToggleImageDarkMode(){
         setDarkMode(!DarkMode);
       if(imageDark==reactLogs){
-          setImageDark(reactLogos);
+        setImageDark(reactLogos);
+        setbackground('white');
+        setcolor('black');
+         
+
       }
       else if(imageDark==reactLogos){
-        setImageDark(reactLogs)
+        setImageDark(reactLogs);
+        setbackground('#3E3B3B');
+        setcolor('white');
       }
+    }
+
+
+    function openModal() {
+      setModalIsOpen(true);
+    }
+  
+    function closeModal() {
+      setModalIsOpen(false);
     }
   
   
   
-  function  ToggleDarkMode()
-  {
-      let backgroundColor = "";
-      let color = "";
-      let styles = "";
   
-          if (DarkMode == true) {
-              backgroundColor = "white"
-              color = "black"
-          } else {
-              backgroundColor = "black"
-              color = "white"
-          }
-          styles = {backgroundColor, color}
-          return styles;
-  }
-  return <>
-    
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Accueil</title>
-    </head>
-   
-    <body style={ToggleDarkMode()}>
-      <div>
-        <h2>fgfdgfdg</h2>
-        <img src={imageDark} onClick={ToggleImageDarkMode}/>
-      </div>
-      <main>
-
-      </main>
-
-      <footer>
+ 
+  
+      
         
-      </footer>
-    </body>
+  return <header>
+    <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    
    
-    </html>
-    </>
+    
+      <div>
+        <h2>fgfdgffdgss</h2>
+        <button onClick={openModal}><span class="material-symbols-outlined">
+            visibility_off
+        </span></button>
+        <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode}></Accessibilite>
+        <img src={imageDark} onClick={ToggleImageDarkMode}/>
+        <style>{`body {background-color: ${backgroundColor}; color:${color}; div: background-color: ${backgroundColor};`}</style>
+      </div>
+      
+    </header>
 }
