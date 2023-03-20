@@ -17,6 +17,18 @@ export function Header(props){
     const handleChangeColor = (color) => {
       setcolor(color);
     }
+
+    const handleChangeBackgroundColor = (backgroundColor) => {
+      setbackground(backgroundColor);
+    }
+
+    function isDark(){
+      if(backgroundColor=="white" && color=="black"){
+        return true;
+      }else if(backgroundColor=="black" && color=="white"){
+        return false;
+      }
+    }
   
     function ToggleImageDarkMode(){
         setDarkMode(!DarkMode);
@@ -62,7 +74,7 @@ export function Header(props){
         <button onClick={openModal}><span class="material-symbols-outlined">
             visibility_off
         </span></button>
-        <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor}></Accessibilite>
+        <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark}></Accessibilite>
         <img src={imageDark} onClick={ToggleImageDarkMode}/>
         <style>{`body {background-color: ${backgroundColor}; color:${color}; div: background-color: ${backgroundColor};`}</style>
       </div>

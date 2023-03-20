@@ -6,6 +6,14 @@ import './../App.css'
 
 export function Accessibilite(props){
 
+  const [backgroundColor, setbackground]=useState('white')
+  const [color, setcolor]=useState('black')
+
+  if(props.isdark==false){
+    setbackground("black");
+  }else{
+    setbackground("white");
+  }
 const modalStyles = {
     overlay: {
       position: 'fixed',
@@ -26,12 +34,17 @@ const modalStyles = {
       borderRadius: '5px',
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
       maxWidth: '400px',
-      backgroundColor:'black'
+      backgroundColor:'black',
     }
   };
 
   const handleRadioChange = (e) => {
     props.setColor(e.target.value);
+    props.setBackground("#010080");
+  }
+  const handleRadioChangedefault = (e) => {
+    props.setColor(e.target.value);
+    props.setBackground("#010080");
   }
 
   return (
@@ -44,10 +57,10 @@ const modalStyles = {
           <div style={modalStyles.content} onClick={(e) => e.stopPropagation()}>
             <h2>Paramètre d'accéssibilité</h2>
           <div>
-            <h1>Contraste</h1>
+            <h2>Contraste</h2>
         <form>
             <label for="default">Default</label>
-            <input type="radio" name="contraste" value="default" id="default"></input>
+            <input type="radio" name="contraste" value="white" id="default" onChange={handleRadioChange}></input>
 
 
             <label for="renforcer">Renforcer</label>
@@ -55,13 +68,13 @@ const modalStyles = {
 
 
             <label for="inverser">Inverser</label>
-            <input type="radio" name="contraste" value="yellow" id="inverser" onChange={handleRadioChange}></input>
+            <input type="radio" name="contraste" value="yellow" id="inverser" onChange={handleRadioChange} ></input>
         </form>
           </div>
 
 
           <div>
-            <h1>Image</h1>
+            <h2>Image</h2>
         <form>
             <label for="default">Default</label>
             <input type="radio" name="image" value="default" id="default"></input>
@@ -73,6 +86,31 @@ const modalStyles = {
 
            
         </form>
+          </div>
+
+
+          <div>
+            <h2>Interlinages</h2>
+            <label for="default">Default</label>
+            <input type="radio" name="image" value="default" id="default"></input>
+
+
+            <label for="texte">Augmenter</label>
+            <input type="radio" name="image" value="texte" id="texte"></input>
+
+          </div>
+
+
+          
+          <div>
+            <h2>Polices</h2>
+            <label for="default">Default</label>
+            <input type="radio" name="image" value="default" id="default"></input>
+
+
+            <label for="texte">Adapter</label>
+            <input type="radio" name="image" value="texte" id="texte"></input>
+
           </div>
 
 
