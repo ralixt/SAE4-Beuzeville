@@ -6,14 +6,13 @@ import './../App.css'
 
 export function Accessibilite(props){
 
-  const [backgroundColor, setbackground]=useState('white')
+  const [backgroundColor, setbackground]=useState(props.isDark ? "black" : "white")
   const [color, setcolor]=useState('black')
 
-  if(props.isdark==false){
-    setbackground("black");
-  }else{
-    setbackground("white");
-  }
+
+
+
+
 const modalStyles = {
     overlay: {
       position: 'fixed',
@@ -49,9 +48,6 @@ const modalStyles = {
 
   return (
     <>
-    <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    </head>
       {props.isOpen && (
         <div style={modalStyles.overlay} onClick={props.onRequestClose}>
           <div style={modalStyles.content} onClick={(e) => e.stopPropagation()}>

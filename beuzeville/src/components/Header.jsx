@@ -5,21 +5,21 @@ import './../App.css'
 
 
 import { Accessibilite } from './Accessibilite.jsx'
-export function Header(props){
+export default function Header(props){
     const [DarkMode, setDarkMode] = useState(false)
     const [imageDark, setImageDark] = useState(reactLogos)
-    const [backgroundColor, setbackground]=useState('white')
-    const [color, setcolor]=useState('black')
+    const [backgroundColor, setBackground]=useState('white')
+    const [color, setColor]=useState('black')
     const [modalIsOpen, setModalIsOpen] = useState(false);
    
 
   
     const handleChangeColor = (color) => {
-      setcolor(color);
+      setColor(color);
     }
 
     const handleChangeBackgroundColor = (backgroundColor) => {
-      setbackground(backgroundColor);
+      setBackground(backgroundColor);
     }
 
     function isDark(){
@@ -34,15 +34,15 @@ export function Header(props){
         setDarkMode(!DarkMode);
       if(imageDark==reactLogs){
         setImageDark(reactLogos);
-        setbackground('white');
-        setcolor('black');
+        setBackground('white');
+        setColor('black');
          
 
       }
       else if(imageDark==reactLogos){
         setImageDark(reactLogs);
-        setbackground('#3E3B3B');
-        setcolor('white');
+        setBackground('#3E3B3B');
+        setColor('white');
       }
     }
 
@@ -56,28 +56,13 @@ export function Header(props){
     }
   
   
-  
-  
- 
-  
-      
-        
-  return <header>
-    <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    </head>
-    
-   
-    
-      <div>
+  return  <div>
         <h2>fgfdgffdgss</h2>
-        <button onClick={openModal}><span class="material-symbols-outlined">
+        <button onClick={openModal}><span className={"material-symbols-outlined"}>
             visibility_off
         </span></button>
         <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark}></Accessibilite>
         <img src={imageDark} onClick={ToggleImageDarkMode}/>
         <style>{`body {background-color: ${backgroundColor}; color:${color}; div: background-color: ${backgroundColor};`}</style>
       </div>
-      
-    </header>
 }
