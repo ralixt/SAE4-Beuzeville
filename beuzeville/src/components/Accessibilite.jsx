@@ -33,7 +33,7 @@ const modalStyles = {
       borderRadius: '5px',
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.3)',
       maxWidth: '400px',
-      backgroundColor:'black',
+      backgroundColor:{backgroundColor},
     }
   };
 
@@ -43,7 +43,12 @@ const modalStyles = {
   }
   const handleRadioChangedefault = (e) => {
     props.setColor(e.target.value);
-    props.setBackground("#010080");
+    props.setBackground("white");
+  }
+
+  const handleRadioChangeRenforcer = (e) => {
+    props.setColor(e.target.value);
+    props.setBackground("#3E3B3B");
   }
 
   return (
@@ -56,11 +61,11 @@ const modalStyles = {
             <h2>Contraste</h2>
         <form>
             <label for="default">Default</label>
-            <input type="radio" name="contraste" value="white" id="default" onChange={handleRadioChange}></input>
+            <input type="radio" name="contraste" value="black" id="default" onChange={handleRadioChangedefault}></input>
 
 
             <label for="renforcer">Renforcer</label>
-            <input type="radio" name="contraste" value="renforcer" id="renforcer"></input>
+            <input type="radio" name="contraste" value="white" id="renforcer" onChange={handleRadioChangeRenforcer}></input>
 
 
             <label for="inverser">Inverser</label>
