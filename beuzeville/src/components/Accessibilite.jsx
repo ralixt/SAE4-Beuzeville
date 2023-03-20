@@ -30,6 +30,10 @@ const modalStyles = {
     }
   };
 
+  const handleRadioChange = (e) => {
+    props.setColor(e.target.value);
+  }
+
   return (
     <>
     <head>
@@ -51,7 +55,7 @@ const modalStyles = {
 
 
             <label for="inverser">Inverser</label>
-            <input type="radio" name="contraste" value="inverser" id="inverser"></input>
+            <input type="radio" name="contraste" value="yellow" id="inverser" onChange={handleRadioChange}></input>
         </form>
           </div>
 
