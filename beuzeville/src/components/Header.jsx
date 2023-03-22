@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import reactLogs from './../assets/soleil.svg'
 import reactLogos from './../assets/lune.png'
+import BeuzevilleLogo from './../assets/beuzeville.png'
+import twitterLogo from './../assets/Twitter.svg'
+import InstagrammeLogo from './../assets/instagram.svg'
+import FacebookLogo from './../assets/Facebook.svg'
 import './../App.css'
 
 
@@ -57,7 +61,16 @@ export default function Header(props){
   
   
   return  <div>
-        <h2>fgfdgffdgss</h2>
+
+        <div>
+          <img src={BeuzevilleLogo} alt="Le logo de Beuzeville"  />
+ 
+          </div>    
+          <div>
+          <img src={twitterLogo} alt="Le logo de Twitter"  />
+          <img src={InstagrammeLogo} alt="Le logo de Twitter"  />
+          <img src={FacebookLogo} alt="Le logo de Twitter"  />
+          </div>
         <button onClick={openModal}><span className={"material-symbols-outlined"}>
             visibility_off
         </span></button>
