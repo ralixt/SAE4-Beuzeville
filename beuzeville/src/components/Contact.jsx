@@ -1,16 +1,16 @@
-// import { getDatabase, ref } from'https://beuzeville-2cd10-default-rtdb.europe-west1.firebasedatabase.app/'// Ici le code qui initialise la variable app. const database = getDatabase(app);
-// import { Database } from './Database.jsx'
+import { getDatabase, ref } from'https://beuzeville-2cd10-default-rtdb.europe-west1.firebasedatabase.app/'// Ici le code qui initialise la variable app. const database = getDatabase(app);
+import { database } from './Database.jsx'
 
 
 export default function Contact(props){
 
-// set(ref(database, 'Contact'),
-// {
-// username: "john",
-// age: 51,
-// }
-// )
-
+set(ref(database, 'Contact'),
+    {
+        username: "john",
+        age: 51,
+    }
+)
+//useeffect sur chaque valeurs pour ensuite lieer une fonction pour envoyer el tout sur la bdd
 return <>
     <h1>Contact</h1>
     <div>
