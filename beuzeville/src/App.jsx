@@ -31,7 +31,7 @@ function App() {
           </BrowserRouter>
         }
 
-        <Footer/>  
+        <Footer/>       
    
    
     </>

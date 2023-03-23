@@ -1,0 +1,58 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Column{
+    display: flex;
+    flex-direction: column;
+}
+
+.Row{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonFooter{
+    background-color:#32ACDB;
+    color: white;
+    border-radius: 40px;
+    height: 2em;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+h3{
+    font-weight: bold;
+}
+
+#Contact{
+    background-color: #0059A9;
+    color: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#beuzeville{
+    max-width: 15em;
+    justify-content: center;
+}
+
+#iconMail{
+    height: 20px;
+    margin: 3%;
+}
+
+#phone{
+    height: 50%;
+}
+
+#noMargin{
+    margin: 2px;
+}
+
+body{
+    background-color: #F6F6F6;
+}
