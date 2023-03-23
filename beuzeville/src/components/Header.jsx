@@ -6,6 +6,7 @@ import twitterLogo from './../assets/Twitter.svg'
 import InstagrammeLogo from './../assets/instagram.svg'
 import FacebookLogo from './../assets/Facebook.svg'
 import './../App.css'
+import './../../src/styleHeader.css'
 
 
 import { Accessibilite } from './Accessibilite.jsx'
@@ -60,22 +61,31 @@ export default function Header(props){
     }
   
   
-  return  <div>
+  return  <div id='contenair'>
 
-        <div>
-          <img src={BeuzevilleLogo} alt="Le logo de Beuzeville"  />
+       
+          <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
  
-          </div>    
-          <div>
+              
+          <div className='logoRSX'>
           <img src={twitterLogo} alt="Le logo de Twitter"  />
           <img src={InstagrammeLogo} alt="Le logo de Twitter"  />
           <img src={FacebookLogo} alt="Le logo de Twitter"  />
           </div>
-        <button onClick={openModal}><span className={"material-symbols-outlined"}>
-            visibility_off
-        </span></button>
-        <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark}></Accessibilite>
-        <img src={imageDark} onClick={ToggleImageDarkMode}/>
+          <div className='inputRecherche'>
+            <input type="text" value="" placeholder='Que recherchez-vous ici ?' />
+          </div>
+          <div className='logoDark'>
+            <button onClick={openModal}><span className={"material-symbols-outlined"}>
+                visibility_off
+            </span>
+            </button>
+        </div>
+        <div className='Accessibilite' >
+          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark}></Accessibilite>
+          <img src={imageDark} onClick={ToggleImageDarkMode}/>
+
+        </div>
         <style>{`body {background-color: ${backgroundColor}; color:${color}; div: background-color: ${backgroundColor};`}</style>
       </div>
 }

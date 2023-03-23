@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contenair{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+ .logoRSX .inputRecherche .logoDark .Accessibilite{
+    
+    justify-content: space-evenly;
+   
+}
+.logoRSX{
+margin-top: 3%;
+margin-left: 2%;
+}
+
+.logoBeuzeville{
+    width: 25%;
+}
+
+
+
+
