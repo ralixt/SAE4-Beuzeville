@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import './App.css'
 import Contact from './components/Contact.jsx';
+import { AlerteSMS } from './components/AlerteSMS.jsx';
 
 function App() {
   
@@ -19,14 +20,13 @@ function App() {
       
       
         { <BrowserRouter>
-          
 
           <Routes>
-
             <Route index element={<p><Link to="/contact">Contact</Link> La Maison</p>} />
             <Route path="maths" element={<p>J'aime les
             maths</p>} />
             <Route path="contact" element={<Contact />} />
+            <Route path="alertessms" element={<AlerteSMS/>}></Route>
           </Routes>
           </BrowserRouter>
         }
