@@ -8,6 +8,7 @@ import './App.css'
 import Contact from './components/Contact.jsx';
 import { AlerteSMS } from './components/AlerteSMS.jsx';
 import {NotFound} from "./components/NotFound.jsx";
+import { Newsletter } from './components/Newsletter.jsx';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="maths" element={<p>J'aime les maths</p>} />
               <Route path="contact" element={<Contact />} />
               <Route path="alertessms" element={<AlerteSMS/>}></Route>
+              <Route path="newsletter" element={<Newsletter/>}></Route>
           </Routes>
           </BrowserRouter>
         }

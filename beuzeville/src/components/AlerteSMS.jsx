@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './../App.css'
-import './AlerteSMS.css'
+import './../CSS/AlerteSMS.css'
 
 
 export function AlerteSMS(props){

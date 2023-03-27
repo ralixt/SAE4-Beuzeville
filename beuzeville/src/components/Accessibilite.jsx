@@ -40,7 +40,7 @@ const modalStyles = {
 
   const handleRadioChange = (e) => {
     props.setColor(e.target.value);
-    props.setBackground("#010080");
+    props.setBackground("#121212");
   }
   const handleRadioChangedefault = (e) => {
     props.setColor(e.target.value);
@@ -49,7 +49,15 @@ const modalStyles = {
 
   const handleRadioChangeRenforcer = (e) => {
     props.setColor(e.target.value);
-    props.setBackground("#3E3B3B");
+    props.setBackground("#121212");
+  }
+
+  const handleRadioChangeInterlignageAugmenter=(e)=> {
+    props.setInterlignage(2.5)
+  }
+
+  const handleRadioChangeInterlignageDefault=(e)=> {
+    props.setInterlignage(1.5)
   }
 
   return (
@@ -94,11 +102,11 @@ const modalStyles = {
           <div>
             <h2>Interlinages</h2>
             <label for="default">Default</label>
-            <input type="radio" name="image" value="default" id="default"></input>
+            <input type="radio" name="image" value="default" id="default" onChange={handleRadioChangeInterlignageDefault}></input>
 
 
             <label for="texte">Augmenter</label>
-            <input type="radio" name="image" value="texte" id="texte"></input>
+            <input type="radio" name="image" value="texte" id="texte" onChange={ handleRadioChangeInterlignageAugmenter}></input>
 
           </div>
 

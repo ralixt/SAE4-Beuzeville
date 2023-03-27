@@ -16,11 +16,14 @@ export default function Header(props){
     const [backgroundColor, setBackground]=useState('white')
     const [color, setColor]=useState('black')
     const [modalIsOpen, setModalIsOpen] = useState(false);
-   
+    const [interlignage, setinterlignage] = useState(1.5);
 
   
     const handleChangeColor = (color) => {
       setColor(color);
+    }
+    const handleChangeInterlignage = (interlignage) => {
+      setinterlignage(interlignage);
     }
 
     const handleChangeBackgroundColor = (backgroundColor) => {
@@ -46,7 +49,7 @@ export default function Header(props){
       }
       else if(imageDark==reactLogos){
         setImageDark(reactLogs);
-        setBackground('#3E3B3B');
+        setBackground('#121212');
         setColor('white');
       }
     }
@@ -82,10 +85,10 @@ export default function Header(props){
             </button>
         </div>
         <div className='Accessibilite' >
-          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark}></Accessibilite>
+          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage}></Accessibilite>
           <img src={imageDark} onClick={ToggleImageDarkMode}/>
 
         </div>
-        <style>{`body {background-color: ${backgroundColor}; color:${color}; div: background-color: ${backgroundColor};`}</style>
+        <style>{`body {background-color: ${backgroundColor}; color:${color}; line-height: ${interlignage}; div: background-color: ${backgroundColor};`}</style>
       </div>
 }
