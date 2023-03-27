@@ -1,0 +1,17 @@
+.iconBlue{
+    color: #1983C2;
+}
+
+.BackgroundBlue{
+    background-color: #32ACDB;
+    border-radius: 15px;
+    border: 0px;
+    padding:  1em;
+    color: white;
+}
+
+.ImageOiseauxAgenda{
+    height: 10em;
+    width: 10em;
+    border-radius: 10px;
+}

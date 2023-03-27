@@ -1,19 +1,20 @@
 import './../CSS/stylesFooter.css'
+import BeuzevilleLogo from './../assets/beuzeville.png'
+
 
 export default function Footer(props){
     return <footer>
          <div id="beuzeville" className="Column">
-            <img  src="beuzeville.png"/>
+            <img  src={BeuzevilleLogo}/>
             <a href="#" class="Row" id="Contact">
-                <img id="iconMail" src="mail.png" alt="icon mail"/>
-                <p>NOUS CONTACTER</p>
+            <span class="material-symbols-outlined">mail</span>                <p>NOUS CONTACTER</p>
             </a>
         </div>
         <div className="Column">
             <h3>Mairie de Beuzeville</h3>
             <p>Place Général de Gaulle<br/>27210 Beuzeville</p>
             <div className="Row">
-                <img id="phone" src="phone.png" alt="icon phone"/>
+                <span className={"material-symbols-outlined"}>call</span>
                 <p id="noMargin">02 32 57 70 40</p>
             </div>
         </div>

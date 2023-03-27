@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import Agenda from './components/Agenda.jsx'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
@@ -17,7 +18,7 @@ function App() {
     
        <Header />
  
-      
+      <Agenda />
       
         { <BrowserRouter>
 
