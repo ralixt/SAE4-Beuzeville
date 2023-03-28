@@ -4,6 +4,7 @@ import reactLogos from './../assets/lune.png'
 import './../App.css'
 
 
+
 export function Accessibilite(props){
 
   const [backgroundColor, setbackground]=useState(props.isDark ? "black" : "white")
@@ -60,6 +61,12 @@ const modalStyles = {
     props.setInterlignage(1.5)
   }
 
+  const handleRadioChangePolice=(e)=> {
+    props.setpolice('OpenDyslexic')
+  }
+
+
+
   return (
     <>
       {props.isOpen && (
@@ -115,11 +122,11 @@ const modalStyles = {
           <div>
             <h2>Polices</h2>
             <label for="default">Default</label>
-            <input type="radio" name="image" value="default" id="default"></input>
+            <input type="radio" name="police" value="default" id="default"></input>
 
 
             <label for="texte">Adapter</label>
-            <input type="radio" name="image" value="texte" id="texte"></input>
+            <input type="radio" name="police" value="texte" id="texte" onChange={handleRadioChangePolice}></input>
 
           </div>
 

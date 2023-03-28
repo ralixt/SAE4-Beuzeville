@@ -17,10 +17,15 @@ export default function Header(props){
     const [color, setColor]=useState('black')
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [interlignage, setinterlignage] = useState(1.5);
+    const [police, setPolice]=useState('arial')
 
   
     const handleChangeColor = (color) => {
       setColor(color);
+    }
+
+    const handleChangePolice = (police) => {
+      setPolice(police);
     }
     const handleChangeInterlignage = (interlignage) => {
       setinterlignage(interlignage);
@@ -85,10 +90,10 @@ export default function Header(props){
             </button>
         </div>
         <div className='Accessibilite' >
-          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage}></Accessibilite>
+          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice}></Accessibilite>
           <img src={imageDark} onClick={ToggleImageDarkMode}/>
 
         </div>
-        <style>{`body {background-color: ${backgroundColor}; color:${color}; line-height: ${interlignage}; div: background-color: ${backgroundColor};`}</style>
+        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police}; div: background-color: ${backgroundColor};`}</style>
       </div>
 }
