@@ -61,8 +61,12 @@ const modalStyles = {
     props.setInterlignage(1.5)
   }
 
-  const handleRadioChangePolice=(e)=> {
-    props.setpolice('OpenDyslexic')
+  const handleRadioChangePoliceDyslexique=(e)=> {
+    props.setpolice('Open-Dyslexic, sans-serif')
+  }
+
+  const handleRadioChangePoliceDefault=(e)=> {
+    props.setpolice('Lato')
   }
 
 
@@ -122,11 +126,11 @@ const modalStyles = {
           <div>
             <h2>Polices</h2>
             <label for="default">Default</label>
-            <input type="radio" name="police" value="default" id="default"></input>
+            <input type="radio" name="police" value="default" id="default" onChange={handleRadioChangePoliceDefault}></input>
 
 
             <label for="texte">Adapter</label>
-            <input type="radio" name="police" value="texte" id="texte" onChange={handleRadioChangePolice}></input>
+            <input type="radio" name="police" value="texte" id="texte" onChange={handleRadioChangePoliceDyslexique}></input>
 
           </div>
 

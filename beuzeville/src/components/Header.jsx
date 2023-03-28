@@ -17,7 +17,7 @@ export default function Header(props){
     const [color, setColor]=useState('black')
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [interlignage, setinterlignage] = useState(1.5);
-    const [police, setPolice]=useState('arial')
+    const [police, setPolice]=useState('Lato')
 
   
     const handleChangeColor = (color) => {
