@@ -3,11 +3,12 @@ import BeuzevilleLogo from './../assets/beuzeville.png'
 
 
 export default function Footer(props){
-    return <footer>
+    return <div id='divFooter'>
          <div id="beuzeville" className="Column">
             <img  src={BeuzevilleLogo}/>
             <a href="#" class="Row" id="Contact">
-            <span class="material-symbols-outlined">mail</span>                <p>NOUS CONTACTER</p>
+            <span class="material-symbols-outlined">mail</span>                
+            <p>NOUS CONTACTER</p>
             </a>
         </div>
         <div className="Column">
@@ -28,5 +29,5 @@ export default function Footer(props){
             <p>Alerte SMS</p>
             <a className="buttonFooter">Rester Informé</a>
         </div>
-    </footer>
+    </div>
 }
