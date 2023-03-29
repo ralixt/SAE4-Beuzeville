@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rn016626/Desktop/SAE4/SAE4-Beuzeville",
+    "last_opened_file_path": "C:/Users/rn016626/Desktop/Dev Mobile/tp5/QuizzApi",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -39,6 +39,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679897677430</updated>
       <workItem from="1679897678628" duration="2605000" />
+      <workItem from="1679904200214" duration="320000" />
+      <workItem from="1679924764691" duration="16000" />
     </task>
     <servers />
   </component>
