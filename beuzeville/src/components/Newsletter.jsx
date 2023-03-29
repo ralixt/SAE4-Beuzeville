@@ -12,9 +12,7 @@ export function Newsletter(props){
 
     ){
         set(push(ref(database, 'Newsletter')),
-        {
-            adresseMail:{mail},
-        }
+            {mail},
         )
 }
 
