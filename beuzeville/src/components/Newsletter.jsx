@@ -14,7 +14,7 @@ export function Newsletter(props){
         set(push(ref(database, 'Newsletter')),
             {mail},
         )
-}
+    }
 
     return <> 
         <div id='news'>
