@@ -2,9 +2,18 @@ import { useState } from 'react'
 import newsletter from './../assets/newsletter.jpg'
 import './../App.css'
 import './../CSS/newsletter.css'
+import {database} from './Database'
 
 
 export function Newsletter(props){
+    const[mail, setmail]=useState("");
+    function send(){
+        set(push(ref(database, 'Newsletter')),
+        {
+            adresseMail:{mail},
+        }
+        )
+}
 
     return <> 
         <div id='news'>
@@ -16,7 +25,7 @@ export function Newsletter(props){
                     <p>Abonnez-vous pour rester informé des alertes de la ville !</p>
                         <form>
                             <label for="mail">Saissisez votre addresse E-mail ci dessous :</label>
-                            <input name="mail" type="email" placeholder='Votre e-mail'></input>
+                            <input name="mail" type="email" placeholder='Votre e-mail' onChange={setmail}></input>
                         
                         </form>
             </div>
@@ -25,7 +34,7 @@ export function Newsletter(props){
                 <input type="checkbox" name="acceptation" id="acceptation" />
             </div>
 
-            <button type="submit">Je m'inscris</button>
+            <button type="submit" onClick={send}>Je m'inscris</button>
             
 
         </div>
