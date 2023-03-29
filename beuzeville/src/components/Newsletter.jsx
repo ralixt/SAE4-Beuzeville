@@ -3,11 +3,14 @@ import newsletter from './../assets/newsletter.jpg'
 import './../App.css'
 import './../CSS/newsletter.css'
 import {database} from './Database'
+import {ref, set, push} from "firebase/database";
 
 
 export function Newsletter(props){
     const[mail, setmail]=useState("");
-    function send(){
+    function send(
+
+    ){
         set(push(ref(database, 'Newsletter')),
         {
             adresseMail:{mail},
@@ -25,7 +28,7 @@ export function Newsletter(props){
                     <p>Abonnez-vous pour rester informé des alertes de la ville !</p>
                         <form>
                             <label for="mail">Saissisez votre addresse E-mail ci dessous :</label>
-                            <input name="mail" type="email" placeholder='Votre e-mail' onChange={setmail}></input>
+                            <input name="mail" type="email" placeholder='Votre e-mail'  value={mail} onChange={e => setmail(e.target.value)}></input>
                         
                         </form>
             </div>
