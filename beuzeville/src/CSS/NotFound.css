@@ -1,0 +1,21 @@
+#page404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorIcon {
+    font-size: 5rem;
+}
+
+.button {
+    color: white;
+    background-color: #32ACDB;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+}
+
+.button:hover {
+    background-color: #2a96c0;
+}
