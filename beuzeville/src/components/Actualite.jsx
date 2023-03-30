@@ -11,18 +11,21 @@ export default function Actualite(props){
  
     
 
-    return <div>
-       
-    <div>
-
-    <h2>{props.titres}</h2>
-    <p>{props.descriptions}</p>
-    <img src={props.images} alt="fdgfgd" />
-   
-    </div>
+    return <>
+    
+        <div className='template'>
+            <div>
+                <img src={props.images} alt="fdgfgd" />
+                <p>{props.descriptions}</p>
+            </div>
+            <h2>{props.titres}</h2>
+            
+    
+        </div>
     
     
-    </div>
+    
+    </>
 
 
     

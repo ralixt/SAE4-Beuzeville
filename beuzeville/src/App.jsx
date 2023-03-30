@@ -40,7 +40,7 @@ function App() {
 
        <Header />
       
-    { <div>
+    <div className='container'>
     
     {projectss.map((projet)=>(
      
@@ -57,7 +57,7 @@ function App() {
     )}
   
 
-    </div> }
+    </div> 
 
     
 
