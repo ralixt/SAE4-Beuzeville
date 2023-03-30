@@ -39,15 +39,16 @@ function App() {
 
 
        <Header />
-      
-    <div className='container'>
-    
-    {projectss.map((projet)=>(
-     
-        <Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>
-     
+<br />
+       <h2>Actualités</h2>  
+        <div className='container'>
+        
+        {projectss.map((projet)=>(
+        
+            <Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>
+        
 
-    )
+        )
 
    
    
