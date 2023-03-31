@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import './App.css'
 import Contact from './components/Contact.jsx';
-import { AlerteSMS } from './components/AlerteSMS.jsx';
+import { AlertesSMS } from './components/AlertesSMS.jsx';
 import {NotFound} from "./components/NotFound.jsx";
 import { Newsletter } from './components/Newsletter.jsx';
 import {database} from './components/Database'
@@ -70,7 +70,7 @@ function App() {
               <Route index element={<p><Link to="/contact">Contact</Link> La Maison</p>} />
               <Route path="maths" element={<p>J'aime les maths</p>} />
               <Route path="contact" element={<Contact />} />
-              <Route path="alertessms" element={<AlerteSMS/>}></Route>
+              <Route path="alertessms" element={<AlertesSMS/>}></Route>
               <Route path="newsletter" element={<Newsletter/>}></Route>
           </Routes>
           </BrowserRouter>
