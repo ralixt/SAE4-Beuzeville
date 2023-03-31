@@ -5,9 +5,9 @@ import BeuzevilleLogo from './../assets/beuzeville.png'
 export default function Footer(props){
     return <div id='divFooter'>
          <div id="beuzeville" className="Column">
-            <img  src={BeuzevilleLogo}/>
-            <a href="#" class="Row" id="Contact">
-            <span class="material-symbols-outlined">mail</span>                
+            <a href="/" ><img id="imgBeuz" src={BeuzevilleLogo}/></a>
+            <a href="contact" class="Row" id="Contact">
+            <span id="iconMail" class="material-symbols-outlined">mail</span>                
             <p>NOUS CONTACTER</p>
             </a>
         </div>
@@ -25,9 +25,9 @@ export default function Footer(props){
         </div>
         <div className="Column">
             <p>La lettre d'information</p>
-            <a className="buttonFooter">S'abonner</a>
+            <a href="newsletter" className="buttonFooter">S'abonner</a>
             <p>Alerte SMS</p>
-            <a className="buttonFooter">Rester Informé</a>
+            <a href="alertessms" className="buttonFooter">S'inscrire</a>
         </div>
     </div>
 }
