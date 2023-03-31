@@ -94,6 +94,7 @@ export default function Header(props){
           <img src={imageDark} onClick={ToggleImageDarkMode}/>
 
         </div>
-        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police}; div: background-color: ${backgroundColor};`}</style>
+        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police};} #divFooter{background-color: ${backgroundColor}; color:${color};} `}</style>
+       
       </div>
 }

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogs from './../assets/soleil.svg'
 import reactLogos from './../assets/lune.png'
-import './../App.css'
+
+import './../CSS/Accessibilite.css'
 
 
 
@@ -16,15 +17,7 @@ export function Accessibilite(props){
 
 
 const modalStyles = {
-    overlay: {
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      
-     
-    },
+   
     content: {
       position: 'absolute',
       top: '50%',
@@ -74,8 +67,8 @@ const modalStyles = {
   return (
     <>
       {props.isOpen && (
-        <div style={modalStyles.overlay} onClick={props.onRequestClose}>
-          <div style={modalStyles.content} onClick={(e) => e.stopPropagation()}>
+        <div className='overlay' onClick={props.onRequestClose}>
+          <div className='content' onClick={(e) => e.stopPropagation()}>
             <h2>Paramètre d'accéssibilité</h2>
           <div>
             <h2>Contraste</h2>
