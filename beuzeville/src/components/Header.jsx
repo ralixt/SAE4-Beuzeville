@@ -74,7 +74,7 @@ export default function Header(props){
        
           <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
  
-              
+             
           <div className='logoRSX'>
           <img src={twitterLogo} alt="Le logo de Twitter"  />
           <img src={InstagrammeLogo} alt="Le logo de Twitter"  />
@@ -82,6 +82,7 @@ export default function Header(props){
           </div>
           <div className='inputRecherche'>
             <input type="text" value="" placeholder='Que recherchez-vous ici ?' />
+            <span class="material-symbols-outlined">search</span>
           </div>
           <div className='logoDark'>
             <button onClick={openModal}><span className={"material-symbols-outlined"}>

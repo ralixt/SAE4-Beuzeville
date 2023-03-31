@@ -7,6 +7,9 @@
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
  .logoRSX .inputRecherche .logoDark .Accessibilite{
@@ -15,12 +18,61 @@ justify-content: space-between;
    
 }
 .logoRSX{
-margin-top: 3%;
-margin-left: 2%;
+
+display: flex;
+flex-direction: row;
+column-gap: 1rem;
 }
 
 .logoBeuzeville{
-    width: 25%;
+    max-width: 25%;
+    
+}
+.inputRecherche{
+  
+  
+    display: flex;
+    height: 2rem;
+}
+
+.logoDark{
+   
+}
+.Accessibilite{
+    
+}
+
+.inputRecherche{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 1rem;
+    padding: 0.3rem 1.5rem;
+    font-size: 2rem;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    position: relative;
+    bottom: 0;
+    /* margin-top: 5rem; */
+    /* transform: translateY(500%); */
+   
+    /* z-index: 1; */
+    /* top: 0; */
+    /* transform: translateY(500%);*/
+    width: 30%;
+}
+.inputRecherche input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    /* padding: 0 1rem 0 1rem; */
+    text-align: center;
+  
 }
 
 
