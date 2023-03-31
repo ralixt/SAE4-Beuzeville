@@ -21,8 +21,7 @@ export default function Actualite(props){
 
                 </div>
             <h2>{props.titres}</h2>
-            
-    
+
         </div>
     
     

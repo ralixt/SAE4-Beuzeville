@@ -2,6 +2,10 @@
     text-decoration: none;
 }
 
+.obligatoire {
+    color: red;
+}
+
 .container{
     width: 95%;
     display: grid;
