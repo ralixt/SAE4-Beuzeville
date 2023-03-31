@@ -1,6 +1,7 @@
 // import { getDatabase, ref } from'https://beuzeville-2cd10-default-rtdb.europe-west1.firebasedatabase.app/'// Ici le code qui initialise la variable app. const database = getDatabase(app);
 import {database} from './Database'
 import { useState } from 'react'
+import {ref, set, push} from "firebase/database";
 
 
 
@@ -14,8 +15,9 @@ export default function Contact(props){
     const[Email, setEmail]=useState("");
     const[ObjetMessage, setObjetMessage]=useState("");
     const[Message, setMessage]=useState("");
+    
     function sendDataContact(){
-        set(push(ref(database, 'Contact/0')),
+        set(push(ref(database, 'Contact')),
             {
                 Prenom: Prenom,
                 Nom: Nom,
@@ -57,7 +59,7 @@ return <>
             <textarea name="name" placeholder="Message" value={Message} onChange={e => setMessage(e.target.value)} required/>
             <input type="checkbox" name="name" required/>
             <label>En envoyant ce formulaire, j’accepte que mes données personnelles soient utilisées pour mener à bien ma demande. En savoir plus *</label>
-            <button type="submit" onSubmit={sendDataContact}>Envoyer</button>
+            <button type="submit" onClick={sendDataContact}>Envoyer</button>
         </form>
     </div>
 </>
