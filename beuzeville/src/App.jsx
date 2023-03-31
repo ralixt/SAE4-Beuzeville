@@ -40,25 +40,7 @@ function App() {
 
        <Header />
 <br />
-       <h2>Actualités</h2>  
-        <div className='container'>
-        
-        {projectss.map((projet)=>(
-        
-            <Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>
-        
 
-        )
-
-   
-   
-    
-    
-    
-    )}
-  
-
-    </div> 
 
     
 
@@ -67,7 +49,7 @@ function App() {
 
           <Routes>
               <Route path="*" element={<NotFound />} />
-              <Route index element={<p><Link to="/contact">Contact</Link> La Maison</p>} />
+              <Route index element={<div> <h2>Actualités</h2> <div className='container'> {projectss.map((projet)=>(<Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>))} </div> <p><Link to="/contact">Contact</Link> La Maison</p></div>} />
               <Route path="maths" element={<p>J'aime les maths</p>} />
               <Route path="contact" element={<Contact />} />
               <Route path="alertessms" element={<AlertesSMS/>}></Route>
