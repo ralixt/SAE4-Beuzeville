@@ -85,10 +85,10 @@ export default function Header(props){
             <span class="material-symbols-outlined">search</span>
           </div>
           <div className='logoDark'>
-            <button onClick={openModal}><span className={"material-symbols-outlined"}>
+            <a onClick={openModal}><span className={"material-symbols-outlined"}>
                 visibility_off
             </span>
-            </button>
+            </a>
         </div>
         <div className='Accessibilite' >
           <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice}></Accessibilite>
