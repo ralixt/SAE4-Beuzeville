@@ -3,7 +3,7 @@ import './../App.css'
 import './../CSS/NotFound.css'
 import {Link} from "react-router-dom";
 
-export function NotFound(props){
+export function NotFound(){
     return <>
         <div id='page404'>
             <span class="material-symbols-outlined errorIcon">error</span>

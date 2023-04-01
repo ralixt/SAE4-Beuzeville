@@ -12,6 +12,7 @@ import {NotFound} from "./components/NotFound.jsx";
 import { Newsletter } from './components/Newsletter.jsx';
 import {database} from './components/Database'
 import {ref, set, push, onValue} from "firebase/database";
+import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
 
 function App() {
   const [projectss, setProjects] = useState([]);
@@ -54,6 +55,8 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route path="alertessms" element={<AlertesSMS/>}></Route>
               <Route path="newsletter" element={<Newsletter/>}></Route>
+            <Route path="confirmationAlertesSMS" element={<ConfirmationAlertesSMS/>}></Route>
+
           </Routes>
           </BrowserRouter>
         }

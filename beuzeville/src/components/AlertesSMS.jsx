@@ -4,8 +4,9 @@ import '../CSS/AlertesSMS.css'
 import alertesSMSBackground from '../assets/alertesSMS.jpg'
 import {database} from './Database'
 import {ref, set, push} from "firebase/database";
+import {Link} from "react-router-dom";
 
-export function AlertesSMS(props){
+export function AlertesSMS(){
 
     const [nom, setNom]=useState("");
     const [prenom, setPrenom]=useState("");
@@ -30,7 +31,7 @@ export function AlertesSMS(props){
 
             <h1>Alertes SMS</h1>
             <p id="subtitle">Abonnez-vous pour rester informé des alertes de la ville !</p>
-            <form method="post" action="">
+            <form method="post">
 
 
                 <label for="nom">Nom<span className="obligatoire">*</span></label>
@@ -50,7 +51,7 @@ export function AlertesSMS(props){
                 </div>
 
                 <div id="divButton">
-                    <button className="buttonSMS" type="submit" onClick={send}>Je m'inscris</button>
+                    <Link to="/confirmationAlertesSMS" className="buttonSMS" onClick={send}>Je m'inscris</Link>
                 </div>
 
             </form>
