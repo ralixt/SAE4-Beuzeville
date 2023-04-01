@@ -13,6 +13,8 @@ import { Newsletter } from './components/Newsletter.jsx';
 import {database} from './components/Database'
 import {ref, set, push, onValue} from "firebase/database";
 import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
+import {Demarches} from "./components/Demarches.jsx";
+import {Acceuil} from "./components/Acceuil.jsx";
 
 function App() {
   const [projectss, setProjects] = useState([]);
@@ -49,13 +51,14 @@ function App() {
         { <BrowserRouter>
 
           <Routes>
-              <Route path="*" element={<NotFound />} />
-              <Route index element={<div> <h2 className='titreActualite'>Actualités</h2> <div className='container'> {projectss.map((projet)=>(<Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>))} </div> </div>} />
-              <Route path="maths" element={<p>J'aime les maths</p>} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="alertessms" element={<AlertesSMS/>}></Route>
-              <Route path="newsletter" element={<Newsletter/>}></Route>
+            <Route path="*" element={<NotFound />} />
+            <Route path="acceuil" element={<Acceuil/>}></Route>
+            <Route index element={<div> <h2 className='titreActualite'>Actualités</h2> <div className='container'> {projectss.map((projet)=>(<Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>))} </div> </div>} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="alertessms" element={<AlertesSMS/>}></Route>
+            <Route path="newsletter" element={<Newsletter/>}></Route>
             <Route path="confirmationAlertesSMS" element={<ConfirmationAlertesSMS/>}></Route>
+            <Route path="demarches" element={<Demarches/>}></Route>
 
           </Routes>
           </BrowserRouter>
