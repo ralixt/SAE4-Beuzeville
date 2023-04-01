@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/AlertesSMS.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/AlertesSMS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/NotFound.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/NotFound.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Actualite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Actualite.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beuzeville/src/components/AlertesSMS.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/AlertesSMS.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +25,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rn016626/Desktop/SAE4/SAE4-Beuzeville&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ragee/Documents/BUT2/SAE4/Beuzeville/SAE4-Beuzeville",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +55,7 @@
       <workItem from="1680088896684" duration="1779000" />
       <workItem from="1680245434096" duration="16000" />
       <workItem from="1680245472554" duration="6635000" />
+      <workItem from="1680339436971" duration="8687000" />
     </task>
     <servers />
   </component>
