@@ -69,69 +69,120 @@ const modalStyles = {
       {props.isOpen && (
         <div className='overlay' onClick={props.onRequestClose}>
           <div className='content' onClick={(e) => e.stopPropagation()}>
-            <h2>Paramètre d'accéssibilité</h2>
-          <div>
-            <h2>Contraste</h2>
-        <form>
-            <label for="default">Default</label>
+            <div className='divTitreX'>
+              <h2>Paramètre d'accéssibilité</h2>
+              <a onClick={props.onRequestClose}><span class="material-symbols-outlined">close</span></a>
+            </div>
+            <div className='accessibilites'>
+            
+          <div className='contraste'>
+            <h2>Contraste</h2> <br />
+        
+          <div className='divContraste'>
+          
+            <label for="default"> 
             <input type="radio" name="contraste" value="black" id="default" onChange={handleRadioChangedefault}></input>
-
-
-            <label for="renforcer">Renforcer</label>
-            <input type="radio" name="contraste" value="white" id="renforcer" onChange={handleRadioChangeRenforcer}></input>
-
-
-            <label for="inverser">Inverser</label>
-            <input type="radio" name="contraste" value="yellow" id="inverser" onChange={handleRadioChange} ></input>
-        </form>
-          </div>
-
-
-          <div>
-            <h2>Image</h2>
-        <form>
-            <label for="default">Default</label>
-            <input type="radio" name="image" value="default" id="default"></input>
-
-
-            <label for="texte">Remplacer par du texte</label>
-            <input type="radio" name="image" value="texte" id="texte"></input>
-
-
+            <span> Default </span>
+            </label>
+            
            
-        </form>
+
+          
+            <label for="renforcer"> 
+            <input type="radio" name="contraste" value="white" id="renforcer" onChange={handleRadioChangeRenforcer}></input>
+            <span> Renforcer </span>
+            </label>
+            
+           
+          
+            <label for="inverser">
+            <input type="radio" name="contraste" value="yellow" id="inverser" onChange={handleRadioChange} ></input>
+              <span>Inverser</span>
+            </label>
+            
+          
+          </div>
+       
+        
           </div>
 
 
+          <div className='contraste'>
+            <h2>Image</h2>
+       
           <div>
+            <label for="defaultz">
+            <input type="radio" name="imagez" value="defaultz" id="defaultz"></input>
+              <span>Default</span>
+            
+            </label>
+            
+
+
+            <label for="textez">
+            <input type="radio" name="imagez" value="textesz" id="textesz"></input>
+              <span>Remplacer par du texte</span>
+              </label>
+            
+
+            </div>
+           
+        
+          </div>
+
+
+          <div className='contraste'>
             <h2>Interlinages</h2>
-            <label for="default">Default</label>
-            <input type="radio" name="image" value="default" id="default" onChange={handleRadioChangeInterlignageDefault}></input>
+          
+            <div >
+            <label for="defaultss">
+            <input type="radio" name="images" value="defaultsss" id="defaultss" onChange={handleRadioChangeInterlignageDefault}></input>
+              <span>Default</span>
+              </label>
+            
 
 
-            <label for="texte">Augmenter</label>
-            <input type="radio" name="image" value="texte" id="texte" onChange={ handleRadioChangeInterlignageAugmenter}></input>
-
+            <label for="texte">
+            <input type="radio" name="images" value="texte" id="texte" onChange={ handleRadioChangeInterlignageAugmenter}></input>
+              <span>Augmenter</span></label>
+            
+            </div>
+           
+            
           </div>
 
 
           
-          <div>
+          <div className='contraste'>
             <h2>Polices</h2>
-            <label for="default">Default</label>
-            <input type="radio" name="police" value="default" id="default" onChange={handleRadioChangePoliceDefault}></input>
+            
+              <div >
+            <label for="defaultc">
+            <input type="radio" name="police" value="defaultsc" id="defaultc" onChange={handleRadioChangePoliceDefault}></input>
+              <span>Default</span>
+            
+            </label>
+            
 
 
-            <label for="texte">Adapter</label>
-            <input type="radio" name="police" value="texte" id="texte" onChange={handleRadioChangePoliceDyslexique}></input>
-
+            <label for="textec">
+            <input type="radio" name="police" value="textescc" id="textec" onChange={handleRadioChangePoliceDyslexique}></input>
+              <span>Adapter</span>
+            </label>
+          
+            </div>
+      
+            
           </div>
 
 
 
+         
 
-            <button onClick={props.onRequestClose}><span class="material-symbols-outlined">close</span></button>
           </div>
+        
+          </div>
+        
         </div>
       )}
     </>

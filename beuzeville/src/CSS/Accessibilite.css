@@ -30,7 +30,77 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
-    max-width: 400px;
+    
     background-color: white;
     color: black;
+    width: 40rem;
+    height: 21rem;
+    border-radius: 30px;
+
+}
+.accessibilites{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    column-gap: 5rem;
+
+    grid-auto-rows: 130px;
+    margin: 2rem auto;
+}
+
+.contraste{
+    border: 1px solid #000000;
+border-radius: 30px;
+height: 50%;
+padding: 1rem;
+}
+.contraste .divContraste{
+    margin-top: -1.5rem;
+}
+
+.contraste div input[type="radio"]{
+    display: none;
+}
+
+.contraste div label{
+    cursor: pointer;
+    margin-right: 0.6rem;
+
+}
+
+.contraste div label span{
+    display: inline-block;
+    background-color: #DBDBDB;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.1rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+
+}
+
+.contraste div input[type="radio"]:checked +label+span {
+ 
+
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.1rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+
+}
+
+.contraste label input[type="radio"]:checked ~ span {
+   
+        background-color: #5C5C5C;
+        color: #FFFFFF;
+    
+}
+.divTitreX{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+}
+.divTitreX span{
+    cursor: pointer;
 }
