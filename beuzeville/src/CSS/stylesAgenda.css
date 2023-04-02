@@ -1,17 +1,25 @@
 .iconBlue{
     color: #1983C2;
+    padding-right: 1%;
 }
 
 .BackgroundBlue{
     background-color: #32ACDB;
     border-radius: 15px;
     border: 0px;
-    padding:  1em;
+    padding:  1.5em;
     color: white;
+    max-width: 15em;
 }
 
 .ImageOiseauxAgenda{
     height: 10em;
-    width: 10em;
+    width: 15em;
     border-radius: 10px;
+}
+
+#buttonEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

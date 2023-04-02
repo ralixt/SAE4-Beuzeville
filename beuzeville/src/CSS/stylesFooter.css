@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: row;
 }
+ 
+.marginTop{
+    margin-top: 4%;
+}
 
 .buttonFooter{
     background-color:#32ACDB;
@@ -27,7 +31,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem;
+}
+
+#marginPhone{
+    margin-top: 9%;
 }
 
 .buttonFooter:hover{

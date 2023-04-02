@@ -7,22 +7,19 @@ export default function Agenda(props){
         <h1>Agenda</h1>
         <div>
             <img class='ImageOiseauxAgenda' src={oiseauxAgenda} alt='image evenement agenda'/>
-            <p>Titre</p>
-            <div>
+            <h3>Titre</h3>
+            <div className='Row'>
                 <span class="material-symbols-outlined iconBlue">schedule</span>
                 <p>14:00 - 18:00</p>
             </div>
-            <div>
+            <div className='Row'>
                 <span class="material-symbols-outlined iconBlue">location_on</span>
                 <p>Gymnase</p>
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <button className='BackgroundBlue'>Voir tous les évènements</button>
+        <div id='buttonEvent'>
+            <button className='BackgroundBlue'>Voir tous les évènements</button>
+        </div>
 
     </section>
 }

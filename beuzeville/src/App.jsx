@@ -15,6 +15,7 @@ import {ref, set, push, onValue} from "firebase/database";
 import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
 import {Demarches} from "./components/Demarches.jsx";
 import {Acceuil} from "./components/Acceuil.jsx";
+import Agenda from './components/Agenda.jsx';
 
 function App() {
   const [projectss, setProjects] = useState([]);
@@ -44,7 +45,6 @@ function App() {
        <Header />
 
 
-
     
 
 
@@ -55,6 +55,7 @@ function App() {
             <Route path="acceuil" element={<Acceuil/>}></Route>
             <Route index element={<div> <h2 className='titreActualite'>Actualités</h2> <div className='container'> {projectss.map((projet)=>(<Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>))} </div> </div>} />
             <Route path="contact" element={<Contact />} />
+            <Route path="agenda" element={<Agenda/>}/>
             <Route path="alertessms" element={<AlertesSMS/>}></Route>
             <Route path="newsletter" element={<Newsletter/>}></Route>
             <Route path="confirmationAlertesSMS" element={<ConfirmationAlertesSMS/>}></Route>
