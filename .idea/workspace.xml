@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/AlertesSMS.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/AlertesSMS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/ResauxSociaux/Facebook.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/ResauxSociaux/Instagram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/ResauxSociaux/Twitter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/ResauxSociaux/Twitter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/pexels-andrew-neel-2312369.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/contact.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Acceuil.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Acceuil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-attestation-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/attestation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-carte-d'identité-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/carte-d-identite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-document-correct-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/correct.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-document-de-signe-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/document-de-signe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-documents-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/documents.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-enfants-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/enfants.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-moniteur-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/moniteur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-planification-environnementale-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/planification-environnementale.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-vote-yes-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/vote-yes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Acceuil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Acceuil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/styleHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/styleHeader.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ragee/Documents/BUT2/SAE4/Beuzeville/SAE4-Beuzeville",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ragee/Documents/BUT2/SAE4/Beuzeville/SAE4-Beuzeville&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ragee\Documents\BUT2\SAE4\Beuzeville\SAE4-Beuzeville\beuzeville\src\CSS" />
       <recent name="C:\Users\ragee\Documents\BUT2\SAE4\Beuzeville\SAE4-Beuzeville\beuzeville\src\assets\ResauxSociaux" />
     </key>
   </component>
@@ -74,7 +84,8 @@
       <workItem from="1680088896684" duration="1779000" />
       <workItem from="1680245434096" duration="16000" />
       <workItem from="1680245472554" duration="6635000" />
-      <workItem from="1680339436971" duration="17804000" />
+      <workItem from="1680339436971" duration="17962000" />
+      <workItem from="1680423478166" duration="13075000" />
     </task>
     <servers />
   </component>

@@ -6,7 +6,7 @@ import twitterLogo from '../assets/ResauxSociaux/Twitter.svg'
 import InstagrammeLogo from '../assets/ResauxSociaux/Instagram.svg'
 import FacebookLogo from '../assets/ResauxSociaux/Facebook.svg'
 import './../App.css'
-import './../../src/styleHeader.css'
+import '../CSS/styleHeader.css'
 
 
 import { Accessibilite } from './Accessibilite.jsx'
@@ -73,8 +73,12 @@ export default function Header(props){
 
        
           <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
- 
-             
+      <div className="menuBoutton">
+          <span className="material-symbols-outlined blue">menu</span>
+          <p>MENU</p>
+      </div>
+
+
           <div className='logoRSX'>
           <img src={twitterLogo} alt="Le logo de Twitter"  />
           <img src={InstagrammeLogo} alt="Le logo de Twitter"  />

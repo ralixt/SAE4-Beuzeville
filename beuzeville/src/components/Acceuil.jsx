@@ -4,6 +4,7 @@ import Actualite from "./Actualite.jsx";
 import {useEffect, useState} from "react";
 import {onValue, ref} from "firebase/database";
 import {database} from "./Database.jsx";
+import {Link} from "react-router-dom";
 
 export function Acceuil(){
     const [projectss, setProjects] = useState([]);
@@ -33,40 +34,61 @@ export function Acceuil(){
             <div id="enUnClic">
                 <h1 id="titreEnUnClic">- En un clic -</h1>
                 <div id="iconsDiv">
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">devices</span>
-                        <p>Mes démarches</p>
-                    </div>
+                    <Link to="/demarches">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">devices</span>
+                            <p>Mes</p>
+                            <p>démarches</p>
+                        </div>
+                    </Link>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">newspaper</span>
-                        <p>Actualités</p>
-                    </div>
+                    <Link to="/actualites">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">newspaper</span>
+                            <p>Actualités</p>
+                        </div>
+                    </Link>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">calendar_month</span>
-                        <p>Agenda</p>
-                    </div>
+                    <Link to="/agenda">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">calendar_month</span>
+                            <p>Agenda</p>
+                        </div>
+                    </Link>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">travel_explore</span>
-                        <p>Explorer Beuzeville</p>
-                    </div>
+                    <Link to="/explorer">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">travel_explore</span>
+                            <p>Explorer</p>
+                            <p>Beuzeville</p>
+                        </div>
+                    </Link>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">construction</span>
-                        <p>Travaux en cours</p>
-                    </div>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">credit_card</span>
-                        <p>Paiement en ligne</p>
-                    </div>
+                    <Link to="/travaux">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">construction</span>
+                            <p>Travaux</p>
+                            <p>en cours</p>
+                        </div>
+                    </Link>
 
-                    <div className="icon-text">
-                        <span className="material-symbols-outlined">mail</span>
-                        <p>Contact</p>
-                    </div>
+
+                    <Link to="">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">credit_card</span>
+                            <p>Paiement</p>
+                            <p>en ligne</p>
+                        </div>
+                    </Link>
+
+                    <Link to="/contact">
+                        <div className="icon-text">
+                            <span className="material-symbols-outlined icon">mail</span>
+                            <p>Contact</p>
+                        </div>
+                    </Link>
+
 
                 </div>
 
@@ -84,6 +106,10 @@ export function Acceuil(){
                             </Actualite>))}
                 </div>
             </div>
+
+
+
+            <h1>Liens utiles</h1>
 
         </div>
     </>
