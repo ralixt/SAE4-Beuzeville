@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogs from './../assets/soleil.svg'
+import reactLogs from './../assets/soleilssss.png'
 import reactLogos from './../assets/lune.png'
 import BeuzevilleLogo from './../assets/beuzeville.png'
 import twitterLogo from '../assets/ResauxSociaux/Twitter.svg'
