@@ -15,13 +15,17 @@ export default function Actualite(props){
     
         <div className='template'>
             
+            <div>
                 <img src={props.images} alt="fdgfgd" />
+                <p>{props.descriptions}</p>
+            </div>
                 <div className='desc'>
-                    <p>{props.descriptions}</p>
+                  
 
                 </div>
+                <div>
             <h2>{props.titres}</h2>
-
+            </div>
         </div>
     
     

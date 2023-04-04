@@ -18,42 +18,18 @@ import {Acceuil} from "./components/Acceuil.jsx";
 import Agenda from './components/Agenda.jsx';
 
 function App() {
-  const [projectss, setProjects] = useState([]);
-  useEffect(() => {
-    const query = ref(database, "Actualite");
-    return onValue(query, (snapshot) => {
-      const data = snapshot.val();
-      
-      
-      if (snapshot.exists()) {
-        Object.values(data).map((project) => {
-          setProjects((projectss) => [...projectss, project]);
-          //console.log(project.titre)
-        });
-      
-    
-      }
-    });
-  }, []);
 
 
   return <>
  
-
-
-
        <Header />
-
-
-    
 
 
         { <BrowserRouter>
 
           <Routes>
             <Route path="*" element={<NotFound />} />
-            <Route path="acceuil" element={<Acceuil/>}></Route>
-            <Route index element={<div> <h2 className='titreActualite'>Actualités</h2> <div className='container'> {projectss.map((projet)=>(<Actualite titres={projet.titre} descriptions={projet.description} images={projet.image} > </Actualite>))} </div> </div>} />
+            <Route index element={<Acceuil></Acceuil>}></Route>
             <Route path="contact" element={<Contact />} />
             <Route path="agenda" element={<Agenda/>}/>
             <Route path="alertessms" element={<AlertesSMS/>}></Route>
