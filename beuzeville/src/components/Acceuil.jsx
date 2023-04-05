@@ -102,7 +102,8 @@ export function Acceuil(){
                         (projet)=>(
                             <Actualite titres={projet.titre}
                                        descriptions={projet.description}
-                                       images={projet.image} >
+                                       images={projet.image} 
+                                       date={projet.date}>
                             </Actualite>))}
                 </div>
             </div>
