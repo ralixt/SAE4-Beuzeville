@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogs from './../assets/soleil.svg'
 import reactLogos from './../assets/lune.png'
 
+
 import './../CSS/Accessibilite.css'
 
 
@@ -33,15 +34,19 @@ const modalStyles = {
   };
 
   const handleRadioChange = (e) => {
+ 
     props.setColor(e.target.value);
     props.setBackground("#121212");
+    
   }
   const handleRadioChangedefault = (e) => {
+    props.setImage(reactLogos);
     props.setColor(e.target.value);
-    props.setBackground("white");
+   
   }
 
   const handleRadioChangeRenforcer = (e) => {
+  
     props.setColor(e.target.value);
     props.setBackground("#121212");
   }

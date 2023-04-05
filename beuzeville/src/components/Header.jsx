@@ -35,6 +35,10 @@ export default function Header(props){
       setBackground(backgroundColor);
     }
 
+    const handleChangeImage = (imageDark) => {
+      setBackground(imageDark);
+    }
+
     function isDark(){
       if(backgroundColor=="white" && color=="black"){
         return true;
@@ -95,11 +99,11 @@ export default function Header(props){
             </a>
         </div>
         <div className='Accessibilite' >
-          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice}></Accessibilite>
+          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice} setImage={handleChangeImage}></Accessibilite>
           <img src={imageDark} onClick={ToggleImageDarkMode}/>
 
         </div>
-        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police};} #divFooter{background-color: ${backgroundColor}; color:${color};} a{background-color: ${backgroundColor}; color:${color};}`}</style>
+        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police};} #divFooter{background-color: ${backgroundColor}; color:${color};} #enUnClic a{background-color: ${backgroundColor}; color:${color};}`}</style>
        
       </div>
 }
