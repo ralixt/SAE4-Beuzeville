@@ -27,47 +27,84 @@ export function Demarches(){
 
                 <div id="demarchesBoxes">
                     <div className="demarcheBox">
-                        <img src={carteIdentite} alt="Logo Carte Nationale d’identité (CNI) et Passeport"/>
+                        <img src={carteIdentite} alt="Logo Carte Nationale d’identité (CNI) et Passeport" className="demarcheIcon"/>
                         <p>Carte Nationale d’identité (CNI) et Passeport</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={enfants} alt="Logo Inscriptions scolaires 2022-2023"/>
+                        <img src={enfants} alt="Logo Inscriptions scolaires 2022-2023" className="demarcheIcon"/>
                         <p>Inscriptions scolaires 2022-2023</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={urbanisme} alt="Logo Urbanisme"/>
+                        <img src={urbanisme} alt="Logo Urbanisme" className="demarcheIcon"/>
                         <p>Urbanisme</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={etatCivil} alt="Logo Etat Civil"/>
+                        <img src={etatCivil} alt="Logo Etat Civil" className="demarcheIcon"/>
                         <p>Etat Civil</p>
+                        <div className="demarcheListe">
+                            <ul>
+                                <li>Demande d’acte d’état civil</li>
+                                <li>Fiches d’état civil</li>
+                                <li>Mariage civil</li>
+                                <li>Certificat de vie maritale (ou concubinage)</li>
+                                <li>Pacte Civil de Solidarité (PACS)</li>
+                                <li>Livret de famille</li>
+                                <li>Déclaration de naissance</li>
+                                <li>Reconnaissance d’un enfant</li>
+                            </ul>
+                        </div>
                     </div>
 
+                    <div className="contentBox">
+                        <div className="label">
+                            <img src={etatCivil} alt="Logo Etat Civil" className="demarcheIcon"/>
+                            <p>Etat Civil</p>
+                        </div>
+                        <div className="contnenu">
+                            <ul>
+                                <li>Demande d’acte d’état civil</li>
+                                <li>Fiches d’état civil</li>
+                                <li>Mariage civil</li>
+                                <li>Certificat de vie maritale (ou concubinage)</li>
+                                <li>Pacte Civil de Solidarité (PACS)</li>
+                                <li>Livret de famille</li>
+                                <li>Déclaration de naissance</li>
+                                <li>Reconnaissance d’un enfant</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
                     <div className="demarcheBox">
-                        <img src={election} alt="Logo Élection - Recensement citoyen"/>
+                        <img src={election} alt="Logo Élection - Recensement citoyen" className="demarcheIcon"/>
                         <p>Élection - Recensement citoyen</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={signature} alt="Logo Signature, baptême civil, héritage et certification de documents"/>
+                        <img src={signature} alt="Logo Signature, baptême civil, héritage et certification de documents" className="demarcheIcon"/>
                         <p>Signature, baptême civil, héritage et certification de documents</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={attestation} alt="Logo Attestation d’acceuil"/>
+                        <img src={attestation} alt="Logo Attestation d’acceuil" className="demarcheIcon"/>
                         <p>Attestation d’acceuil</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={ast} alt="Logo Autorisation de sortie de territoire (AST)"/>
+                        <img src={ast} alt="Logo Autorisation de sortie de territoire (AST)" className="demarcheIcon"/>
                         <p>Autorisation de sortie de territoire (AST)</p>
                     </div>
 
                     <div className="demarcheBox">
-                        <img src={guichet} alt="Logo Espace France Services : Un guichet Unique"/>
+                        <img src={guichet} alt="Logo Espace France Services : Un guichet Unique" className="demarcheIcon"/>
                         <p>Espace France Services : Un guichet Unique</p>
                     </div>
 
@@ -79,6 +116,7 @@ export function Demarches(){
             </div>
 
         </div>
+        <script src="script.js"></script>
 
     </>
 
