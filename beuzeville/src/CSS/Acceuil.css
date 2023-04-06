@@ -67,3 +67,18 @@
     font-size: 4.5rem;
 
 }
+
+.actualite{
+    margin-bottom: 3rem;
+}
+
+.actualite a{
+    padding: 2%;
+    background: #32ACDB;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30rem;
+    color: white;
+}
+

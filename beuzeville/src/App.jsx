@@ -16,6 +16,7 @@ import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
 import {Demarches} from "./components/Demarches.jsx";
 import {Acceuil} from "./components/Acceuil.jsx";
 import Agenda from './components/Agenda.jsx';
+import { ToutActualite } from './components/ToutActualite.jsx';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="agenda" element={<Agenda/>}/>
             <Route path="alertessms" element={<AlertesSMS/>}></Route>
             <Route path="newsletter" element={<Newsletter/>}></Route>
+            <Route path="toutActualite" element={<ToutActualite/>}></Route>
             <Route path="confirmationAlertesSMS" element={<ConfirmationAlertesSMS/>}></Route>
             <Route path="demarches" element={<Demarches/>}></Route>
 

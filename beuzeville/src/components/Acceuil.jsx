@@ -95,17 +95,22 @@ export function Acceuil(){
 
             </div>
 
-            <div>
+            <div className="actualite">
                 <h2 className='titreActualite'>Actualités</h2>
                 <div className='container'>
-                    {projectss.map(
+                    {projectss.splice(0,4).map(
                         (projet)=>(
                             <Actualite titres={projet.titre}
                                        descriptions={projet.description}
                                        images={projet.image} 
                                        date={projet.date}>
                             </Actualite>))}
+                            
                 </div>
+
+                <a href="ToutActualite">Voir tout les actualites</a>
+
+               
             </div>
 
 
