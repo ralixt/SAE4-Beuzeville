@@ -42,11 +42,11 @@ return <>
                 <h2 className='marginh2'>Vos Informations</h2>
                 <div className='Row1'>
                     <div className='Column size40 noMarginLeft'>
-                        <label>Nom</label>
+                        <label>Nom<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="text" name="name" placeholder="Nom"  value={Nom} onChange={e => setNom(e.target.value)} required/>
                     </div>
                     <div className='Column size40 noMarginRight'>
-                        <label>Prénom</label>
+                        <label>Prénom<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="text" name="name" placeholder="Prénom"  value={Prenom} onChange={e => setPrenom(e.target.value)} required/>
                     </div>
                 </div>
@@ -54,39 +54,39 @@ return <>
             <section>
                 <h2 className='marginh2'>Vos coordonées</h2>
                 <div className='Column'>
-                    <label>Adresse</label>
+                    <label>Adresse<span className="obligatoire">*</span></label>
                     <input className='InputContact' type="text" name="name" placeholder="adresse"  value={AdressePostale} onChange={e => setAdressePostale(e.target.value)} required/>
                 </div>
                 <div className='Row1'>
                     <div className='Column size40 noMarginLeft'>
-                        <label>Code Postal</label>
+                        <label>Code Postal<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="number" name="name" placeholder="Code postal"  value={CodePostal} onChange={e => setCodePostal(e.target.value)} required/>
                     </div>
                     <div className='Column size40 noMarginRight'>
-                        <label>Téléphone</label>
+                        <label>Téléphone<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="number" name="name" placeholder="Téléphone"  value={Telephone} onChange={e => setTelephone(e.target.value)} required/>
                     </div>
                 </div>
                 <div className='Row1'>
                     <div className='Column size40 noMarginLeft'>
-                        <label>Ville</label>
+                        <label>Ville<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="text" name="name" placeholder="Ville"  value={Ville} onChange={e => setVille(e.target.value)} required/>
                     </div>
                     <div className='Column size40 noMarginRight'>
-                        <label>Courriel</label>
+                        <label>Courriel<span className="obligatoire">*</span></label>
                         <input className='InputContact' type="email" name="name" placeholder="Courriel"  value={Email} onChange={e => setEmail(e.target.value)} required/>
                     </div>
                 </div>
             </section>
             <section>
                 <h2 className='marginh2'>Votre Message</h2>
-                <label>Objet du message</label>
+                <label>Objet du message<span className="obligatoire">*</span></label>
                 <input className='InputContact' type="text" name="name" placeholder="Objet du message"  value={ObjetMessage} onChange={e => setObjetMessage(e.target.value)} required/>
-                <label>Message</label>
+                <label>Message<span className="obligatoire">*</span></label>
                 <textarea className='areaMessage' name="name" placeholder="Message" value={Message} onChange={e => setMessage(e.target.value)} required/>
                 <div className='Row'>
                     <input id='checkContact' type="checkbox" name="name" required/>
-                    <label>En envoyant ce formulaire, j’accepte que mes données personnelles soient utilisées pour mener à bien ma demande. <a href='/404'>En savoir plus</a> *</label>
+                    <label>En envoyant ce formulaire, j’accepte que mes données personnelles soient utilisées pour mener à bien ma demande. <a href='/404'>En savoir plus</a><span className="obligatoire">*</span></label>
                 </div>
             </section>
             <button id='buttonContact' type="submit" onClick={sendDataContact}>Envoyer</button>
