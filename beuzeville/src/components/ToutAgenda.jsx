@@ -22,15 +22,16 @@ export function ToutAgenda(){
             });
         }, []);
     return <>
-             <h2>Agenda</h2>
-                <div className='container'>
+             <h1 id="centrerh1">Agenda</h1>
+                <div className='allagenda'>
                     {agenda.map(
                         (event1)=>(
                             <Agenda    titre={event1.Titre}
                                        category={event1.Category}
                                        date1={event1.DateDebut}
                                        date2={event1.DateFin}
-                                       horaire={event1.Horaire}>
+                                       horaire={event1.Horaire}
+                                       lieu={event1.Lieu}>
                             </Agenda>))}
                 </div>
     </>

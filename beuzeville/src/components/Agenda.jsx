@@ -5,18 +5,18 @@ import oiseauxAgenda from './../assets/oiseaux.jpg'
 export default function Agenda(props){
     function getDate(date1, date2){
         if(date1 != date2){
-            return <p>{date1}<br></br>↓<br></br>{date2}</p>
+            return <p className='dateAgenda'>{date1}<br></br>↓<br></br>{date2}</p>
         }
         else{
-            return <p>{date1}</p>
+            return <p className='dateAgenda'>{date1}</p>
         }
     
     }
-    return <section>
-        <div className='template'>
+    return <section className='TailleAgenda'>
+        <div>
             <div className='imageAgenda'>
                 <img className='ImageOiseauxAgenda' src={oiseauxAgenda} alt="image agenda" />
-                <p>{props.category}</p>
+                <p className='categorie'>{props.category}</p>
                 {getDate(props.date1, props.date2)}
             </div>
             <h2>{props.titre}</h2>

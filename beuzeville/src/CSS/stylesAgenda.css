@@ -12,16 +12,31 @@
     max-width: 15em;
 }
 
+.TailleAgenda{
+    width: 325px;
+    height: 400px;
+}
+
+.allagenda{
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    margin: auto;
+    column-gap: 7rem;
+    grid-auto-rows: 340px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 .ImageOiseauxAgenda{
-    height: 10em;
-    width: 15em;
+    width: 325px;
     border-radius: 10px;
 }
 
 .imageAgenda{
     position: relative;
 }
-.imageAgenda p{
+.categorie{
     position: absolute;
     bottom: 10%;
     left: 3%;
@@ -30,6 +45,18 @@
     padding: 1%,2%;
     color: white;
     padding: 2px 10px;
+}
+
+.dateAgenda{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    background: #1983C2;
+    border-radius: 20px;
+    padding: 1%,2%;
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
 }
 
 #buttonEvent{
