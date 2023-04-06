@@ -1,4 +1,4 @@
-#acceuil {
+#accueil {
     width: 90%;
     margin: auto;
 }
@@ -34,30 +34,25 @@
     font-size: 2rem;
 }
 
+
+
+
 #iconsDiv {
-    display: grid;
-    /*grid-template-columns: repeat(auto-fill, 100px);*/
-    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-
-    align-items: center;
+    display: flex;
     justify-content: center;
-    margin: 2rem auto;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    max-width: 100%;
-    color: inherit;
+    flex-wrap: wrap;
 }
-
 
 .icon-text {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     text-align: center;
-    width: 115px;
-    height: 115px;
+    margin: 0.5rem 2rem;
+    flex-basis: 150px;
 }
+
+
 
 .icon {
     font-size: 4rem;
@@ -82,3 +77,44 @@
     color: white;
 }
 
+
+
+
+#liensUtiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.logoLiensUtiles {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 1rem;
+}
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 768px) {
+    #iconsDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-text {
+        margin: 20px 0;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+
+    #liensUtiles {
+        flex-direction: column;
+    }
+}

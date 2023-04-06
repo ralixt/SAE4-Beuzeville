@@ -6,6 +6,17 @@ import {onValue, ref} from "firebase/database";
 import {database} from "./Database.jsx";
 import {Link} from "react-router-dom";
 
+
+import ccphb from "../assets/LiensUtiles/Communauté_de_communes_du_Pays_de_Honfleur-Beuzeville.png"
+import departement from  "../assets/LiensUtiles/departement.png"
+import honfleur from "../assets/LiensUtiles/honfleur.png"
+import ccieure from  "../assets/LiensUtiles/logo_ccieure.png"
+import mediatheque from "../assets/LiensUtiles/mediatheque.png"
+import normandieTourisme from "../assets/LiensUtiles/normandieTourisme.png"
+import poleEstuaire from "../assets/LiensUtiles/pole-estuaire.png"
+import region from "../assets/LiensUtiles/Region_Normandie.png"
+import pnr from "../assets/LiensUtiles/pnrNormande.png"
+
 export function Accueil(){
     const [projectss, setProjects] = useState([]);
     useEffect(() => {
@@ -26,7 +37,7 @@ export function Accueil(){
     }, []);
 
     return <>
-        <div id="acceuil">
+        <div id="accueil">
             <div className="backgroundDiv">
                 <img src={acceuil} alt="Fond Démarches avec Mairie de Beuzeville" id="acceuilBackground"/>
             </div>
@@ -74,7 +85,7 @@ export function Accueil(){
                     </Link>
 
 
-                    <Link to="">
+                    <Link to="https://www.tipi.budget.gouv.fr/tpa/accueilportail.web">
                         <div className="icon-text">
                             <span className="material-symbols-outlined icon">credit_card</span>
                             <p>Paiement</p>
@@ -114,8 +125,51 @@ export function Accueil(){
             </div>
 
 
+            <div id="divLiensUtiles">
+                <h1>Liens utiles</h1>
+                <div id="liensUtiles">
+                    <Link to="https://www.normandie.fr/">
+                        <img src={region} alt="Logo Région Normandie" className="logoLiensUtiles"/>
+                    </Link>
 
-            <h1>Liens utiles</h1>
+                    <Link to="https://eureennormandie.fr/" >
+                        <img src={departement} alt="Logo Département de l'Eure en Normandie" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.normandie-tourisme.fr/">
+                        <img src={normandieTourisme} alt="Logo Normandie Tourisme" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.portesdenormandie.cci.fr/">
+                        <img src={ccieure} alt="Logo CCI Eure" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.ccphb.fr/">
+                        <img src={ccphb} alt="Logo Communauté de communes Honfleur-Beuzeville" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.ot-honfleur.fr/">
+                        <img src={honfleur} alt="Logo d'Honfleur" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.estuairedelaseine.fr/">
+                        <img src={poleEstuaire} alt="Logo Pôle métropolitaine de l'Estuaire de la Seine" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.mediathequebeuzeville.fr/">
+                        <img src={mediatheque} alt="Logo médiathéque de Beuzeville" className="logoLiensUtiles"/>
+                    </Link>
+
+                    <Link to="https://www.pnr-seine-normande.com/">
+                        <img src={pnr} alt="Logo Parc naturel régional des Boucles de la Seine Normande" className="logoLiensUtiles"/>
+                    </Link>
+                </div>
+
+
+            </div>
+
+
+
 
         </div>
     </>
