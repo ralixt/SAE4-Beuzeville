@@ -1,6 +1,7 @@
 import acceuil from "../assets/acceuil.jpg";
 import '../CSS/Accueil.css'
 import Actualite from "./Actualite.jsx";
+import Agenda from "./Agenda.jsx";
 import {useEffect, useState} from "react";
 import {onValue, ref} from "firebase/database";
 import {database} from "./Database.jsx";
@@ -19,9 +20,10 @@ import pnr from "../assets/LiensUtiles/pnrNormande.png"
 
 export function Accueil(){
     const [projectss, setProjects] = useState([]);
+    const [agenda, setAgenda] = useState([]);
     useEffect(() => {
         const query = ref(database, "Actualite");
-        return onValue(query, (snapshot) => {
+        onValue(query, (snapshot) => {
             const data = snapshot.val();
 
 
@@ -30,8 +32,18 @@ export function Accueil(){
                     setProjects((projectss) => [...projectss, project]);
                     //console.log(project.titre)
                 });
-
-
+            }
+        });
+    }, []);
+    useEffect(() => {
+        const query2 = ref(database, "Agenda");
+        onValue(query2, (snapshot2) => {
+            const data2 = snapshot2.val();
+            if (snapshot2.exists()) {
+                Object.values(data2).map((event1) => {
+                    setAgenda((agenda) => [...agenda, event1]);
+                    //console.log(project.titre)
+                });
             }
         });
     }, []);
@@ -109,7 +121,7 @@ export function Accueil(){
             <div className="actualite">
                 <h2 className='titreActualite'>Actualités</h2>
                 <div className='container'>
-                    {projectss.splice(0,4).map(
+                    {projectss.splice(0,3).map(
                         (projet)=>(
                             <Actualite titres={projet.titre}
                                        descriptions={projet.description}
@@ -122,6 +134,26 @@ export function Accueil(){
                 <a href="TouteActualite">Voir toutes les actualites</a>
 
                
+            </div>
+
+            <div>
+                <div className="actualite">
+                    <h2 className='titreActualite'>Agenda</h2>
+                    <div className='container'>
+                        {agenda.splice(0,3).map(
+                            (event1)=>(
+                                <Agenda titre={event1.Titre}
+                                        category={event1.Category}
+                                        horaire={event1.Horaire} 
+                                        lieu={event1.Lieu}
+                                        date1={event1.DateDebut}
+                                        date2={event1.DateFin}>
+                                </Agenda>))}
+                    </div>
+                </div>
+                <div id='buttonEvent'>
+                    <a href="allAgenda" className='BackgroundBlue'>Voir tous les évènements</a>
+                </div>
             </div>
 
 

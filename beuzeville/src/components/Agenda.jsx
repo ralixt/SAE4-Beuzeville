@@ -3,23 +3,31 @@ import oiseauxAgenda from './../assets/oiseaux.jpg'
 
 
 export default function Agenda(props){
+    function getDate(date1, date2){
+        if(date1 != date2){
+            return <p>{date1}<br></br>↓<br></br>{date2}</p>
+        }
+        else{
+            return <p>{date1}</p>
+        }
+    
+    }
     return <section>
-        <h1>Agenda</h1>
-        <div>
-            <img class='ImageOiseauxAgenda' src={oiseauxAgenda} alt='image evenement agenda'/>
-            <h3>Titre</h3>
+        <div className='template'>
+            <div className='imageAgenda'>
+                <img className='ImageOiseauxAgenda' src={oiseauxAgenda} alt="image agenda" />
+                <p>{props.category}</p>
+                {getDate(props.date1, props.date2)}
+            </div>
+            <h2>{props.titre}</h2>
             <div className='Row'>
                 <span class="material-symbols-outlined iconBlue">schedule</span>
-                <p>14:00 - 18:00</p>
+                <p>{props.horaire}</p>
             </div>
             <div className='Row'>
                 <span class="material-symbols-outlined iconBlue">location_on</span>
-                <p>Gymnase</p>
+                <p>{props.lieu}</p>
             </div>
         </div>
-        <div id='buttonEvent'>
-            <button className='BackgroundBlue'>Voir tous les évènements</button>
-        </div>
-
     </section>
 }

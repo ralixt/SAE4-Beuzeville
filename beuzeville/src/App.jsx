@@ -15,7 +15,7 @@ import {ref, set, push, onValue} from "firebase/database";
 import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
 import {Demarches} from "./components/Demarches.jsx";
 import {Accueil} from "./components/Accueil.jsx";
-import Agenda from './components/Agenda.jsx';
+import {ToutAgenda} from './components/ToutAgenda.jsx';
 import { ToutActualite } from './components/ToutActualite.jsx';
 import { ConfirmationNewsletter } from './components/ConfirmationNewsletter.jsx';
 
@@ -33,7 +33,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route index element={<Accueil></Accueil>}></Route>
             <Route path="contact" element={<Contact />} />
-            <Route path="agenda" element={<Agenda/>}/>
+            <Route path="allAgenda" element={<ToutAgenda/>}/>
             <Route path="alertessms" element={<AlertesSMS/>}></Route>
             <Route path="newsletter" element={<Newsletter/>}></Route>
             <Route path="touteActualite" element={<ToutActualite/>}></Route>
