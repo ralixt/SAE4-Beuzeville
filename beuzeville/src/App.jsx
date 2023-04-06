@@ -14,7 +14,7 @@ import {database} from './components/Database'
 import {ref, set, push, onValue} from "firebase/database";
 import {ConfirmationAlertesSMS} from "./components/ConfirmationAlertesSMS.jsx";
 import {Demarches} from "./components/Demarches.jsx";
-import {Acceuil} from "./components/Acceuil.jsx";
+import {Accueil} from "./components/Accueil.jsx";
 import Agenda from './components/Agenda.jsx';
 import { ToutActualite } from './components/ToutActualite.jsx';
 
@@ -30,7 +30,7 @@ function App() {
 
           <Routes>
             <Route path="*" element={<NotFound />} />
-            <Route index element={<Acceuil></Acceuil>}></Route>
+            <Route index element={<Accueil></Accueil>}></Route>
             <Route path="contact" element={<Contact />} />
             <Route path="agenda" element={<Agenda/>}/>
             <Route path="alertessms" element={<AlertesSMS/>}></Route>
