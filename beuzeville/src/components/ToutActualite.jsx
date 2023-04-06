@@ -7,6 +7,7 @@ import {useEffect, useState} from "react";
 import {onValue, ref} from "firebase/database";
 import {database} from "./Database.jsx";
 import {Link} from "react-router-dom";
+import Actaliteimg from "./../assets/pageActu.png"
 
 
 export function ToutActualite(){
@@ -30,8 +31,11 @@ export function ToutActualite(){
 
     return<>
     <div id='Actualite'>
-        
-    <h2 className='titreActualite'>Actualités</h2>
+    <div className="imageAcualite">
+        <img src={Actaliteimg} alt="l'image de la page actualite" />
+    </div>
+    
+    <h2 className='titreActualites'>Actualités</h2>
                 <div className='container'>
                     {projectss.map(
                         (projet)=>(

@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,280px);
    
-    margin: 0.5rem auto;
+    margin: 0.5rem 0rem;
     column-gap: 7rem;
     grid-auto-rows: 340px;
 }
@@ -19,6 +19,7 @@
 .titreActualite{
     margin-top: 1rem;
     margin-left: 1rem;
+    
     
 }
 

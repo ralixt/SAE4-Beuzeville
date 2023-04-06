@@ -4,6 +4,7 @@ import './../App.css'
 import './../CSS/newsletter.css'
 import {database} from './Database'
 import {ref, set, push} from "firebase/database";
+import {Link} from "react-router-dom";
 
 
 export function Newsletter(props){
@@ -44,7 +45,8 @@ export function Newsletter(props){
             </div>
            
         <div className='divButton'>
-            <button type="submit" onClick={send}>Je m'inscris</button>
+    
+            <Link to="/confirmationNewsletter" className="buttonSMS" onClick={send}>Je m'inscris</Link>
         </div>  
         </form>
 

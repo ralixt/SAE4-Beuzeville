@@ -119,7 +119,7 @@ export function Accueil(){
                             
                 </div>
 
-                <a href="ToutActualite">Voir toutes les actualites</a>
+                <a href="TouteActualite">Voir toutes les actualites</a>
 
                
             </div>

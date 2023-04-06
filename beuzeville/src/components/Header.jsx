@@ -7,6 +7,9 @@ import InstagrammeLogo from '../assets/ResauxSociaux/Instagram.svg'
 import FacebookLogo from '../assets/ResauxSociaux/Facebook.svg'
 import './../App.css'
 import '../CSS/styleHeader.css'
+import {Link} from "react-router-dom";
+
+
 
 
 import { Accessibilite } from './Accessibilite.jsx'
@@ -76,7 +79,10 @@ export default function Header(props){
   return  <div id='contenair'>
 
        
-          <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
+          
+         <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
+          
+       
       <div className="menuBoutton">
           <span className="material-symbols-outlined blue">menu</span>
           <p>MENU</p>
