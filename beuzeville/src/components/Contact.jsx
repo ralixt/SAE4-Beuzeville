@@ -40,34 +40,41 @@ return <>
         <form>
             <section>
                 <h2>Vos Informations</h2>
-                <label>Nom</label>
-                <input type="text" name="name" placeholder="Nom"  value={Nom} onChange={e => setNom(e.target.value)} required/>
-                <label>Prénom</label>
-                <input type="text" name="name" placeholder="Prénom"  value={Prenom} onChange={e => setPrenom(e.target.value)} required/>
+                <div className='Row'>
+                    <div className='Column'>
+                        <label>Nom</label>
+                        <input className='InputContact' type="text" name="name" placeholder="Nom"  value={Nom} onChange={e => setNom(e.target.value)} required/>
+                    </div>
+                    <div className='Column'>
+                        <label>Prénom</label>
+                        <input className='InputContact' type="text" name="name" placeholder="Prénom"  value={Prenom} onChange={e => setPrenom(e.target.value)} required/>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Vos coordonées</h2>
-                <label>Adresse</label>
-                <input type="text" name="name" placeholder="adresse"  value={AdressePostale} onChange={e => setAdressePostale(e.target.value)} required/>
+                
+                    <label>Adresse</label>
+                    <input className='InputContact' type="text" name="name" placeholder="adresse"  value={AdressePostale} onChange={e => setAdressePostale(e.target.value)} required/>
                 <label>Code Postal</label>
-                <input type="number" name="name" placeholder="Code postal"  value={CodePostal} onChange={e => setCodePostal(e.target.value)} required/>
+                <input className='InputContact' type="number" name="name" placeholder="Code postal"  value={CodePostal} onChange={e => setCodePostal(e.target.value)} required/>
                 <label>Téléphone</label>
-                <input type="number" name="name" placeholder="Téléphone"  value={Telephone} onChange={e => setTelephone(e.target.value)} required/>
+                <input className='InputContact' type="number" name="name" placeholder="Téléphone"  value={Telephone} onChange={e => setTelephone(e.target.value)} required/>
                 <label>Ville</label>
-                <input type="text" name="name" placeholder="Ville"  value={Ville} onChange={e => setVille(e.target.value)} required/>
+                <input className='InputContact' type="text" name="name" placeholder="Ville"  value={Ville} onChange={e => setVille(e.target.value)} required/>
                 <label>Courriel</label>
-                <input type="email" name="name" placeholder="Courriel"  value={Email} onChange={e => setEmail(e.target.value)} required/>
+                <input className='InputContact' type="email" name="name" placeholder="Courriel"  value={Email} onChange={e => setEmail(e.target.value)} required/>
             </section>
             <section>
                 <h2>Votre Message</h2>
                 <label>Objet du message</label>
-                <input type="text" name="name" placeholder="Objet du message"  value={ObjetMessage} onChange={e => setObjetMessage(e.target.value)} required/>
+                <input className='InputContact' type="text" name="name" placeholder="Objet du message"  value={ObjetMessage} onChange={e => setObjetMessage(e.target.value)} required/>
                 <label>Message</label>
                 <textarea name="name" placeholder="Message" value={Message} onChange={e => setMessage(e.target.value)} required/>
-                <input type="checkbox" name="name" required/>
+                <input className='InputContact' type="checkbox" name="name" required/>
                 <label>En envoyant ce formulaire, j’accepte que mes données personnelles soient utilisées pour mener à bien ma demande. En savoir plus *</label>
             </section>
-            <button type="submit" onClick={sendDataContact}>Envoyer</button>
+            <button id='buttonContact' type="submit" onClick={sendDataContact}>Envoyer</button>
         </form>
     </div>
 </>

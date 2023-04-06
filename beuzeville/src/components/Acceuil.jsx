@@ -108,7 +108,7 @@ export function Acceuil(){
                             
                 </div>
 
-                <a href="ToutActualite">Voir tout les actualites</a>
+                <a href="ToutActualite">Voir toutes les actualites</a>
 
                
             </div>
