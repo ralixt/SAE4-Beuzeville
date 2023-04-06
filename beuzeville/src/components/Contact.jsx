@@ -35,11 +35,11 @@ export default function Contact(props){
     }
 //usestate sur chaque valeurs pour ensuite lier une fonction pour envoyer le tout sur la bdd
 return <>
-    <h1>Contact</h1>
+    <h1 id='centrerh1'>Contact</h1>
     <div>
         <form className='size90'>
             <section>
-                <h2>Vos Informations</h2>
+                <h2 className='marginh2'>Vos Informations</h2>
                 <div className='Row1'>
                     <div className='Column size40 noMarginLeft'>
                         <label>Nom</label>
@@ -52,7 +52,7 @@ return <>
                 </div>
             </section>
             <section>
-                <h2>Vos coordonées</h2>
+                <h2 className='marginh2'>Vos coordonées</h2>
                 <div className='Column'>
                     <label>Adresse</label>
                     <input className='InputContact' type="text" name="name" placeholder="adresse"  value={AdressePostale} onChange={e => setAdressePostale(e.target.value)} required/>
@@ -79,7 +79,7 @@ return <>
                 </div>
             </section>
             <section>
-                <h2>Votre Message</h2>
+                <h2 className='marginh2'>Votre Message</h2>
                 <label>Objet du message</label>
                 <input className='InputContact' type="text" name="name" placeholder="Objet du message"  value={ObjetMessage} onChange={e => setObjetMessage(e.target.value)} required/>
                 <label>Message</label>

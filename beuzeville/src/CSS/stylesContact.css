@@ -21,9 +21,17 @@ section{
     margin-top: 0.2rem;
 }
 
+.marginh2{
+    margin-top: 3%;
+}
+
 #checkContact{
     height: 1.5rem;
     width: 1.5rem;
+}
+
+#centrerh1{
+    text-align: center;
 }
 
 #buttonContact{
