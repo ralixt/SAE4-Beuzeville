@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Acceuil.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Acceuil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-attestation-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/attestation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-carte-d'identité-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/carte-d-identite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-document-correct-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/correct.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-document-de-signe-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/document-de-signe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-documents-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/documents.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-enfants-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/enfants.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-moniteur-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/moniteur.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-planification-environnementale-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/planification-environnementale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/icons8-vote-yes-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/assets/Demarches/vote-yes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Acceuil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Acceuil.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/styleHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/styleHeader.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +68,8 @@
       <workItem from="1680245434096" duration="16000" />
       <workItem from="1680245472554" duration="6635000" />
       <workItem from="1680339436971" duration="17962000" />
-      <workItem from="1680423478166" duration="13075000" />
+      <workItem from="1680423478166" duration="13882000" />
+      <workItem from="1680447658610" duration="12000" />
     </task>
     <servers />
   </component>

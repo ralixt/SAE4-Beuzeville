@@ -35,13 +35,13 @@ export function AlertesSMS(){
 
 
                 <label for="nom">Nom<span className="obligatoire">*</span></label>
-                <input name="nom" type="text" placeholder='Nom' value={nom} onChange={e => setNom(e.target.value)}></input>
+                <input className="inputAlertesSMS" name="nom" type="text" placeholder='Nom' value={nom} onChange={e => setNom(e.target.value)}></input>
 
                 <label for="prenom">Prénom<span className="obligatoire">*</span></label>
-                <input name="prenom" type="text" placeholder='Prénom' value={prenom} onChange={e => setPrenom(e.target.value)}></input>
+                <input className="inputAlertesSMS" name="prenom" type="text" placeholder='Prénom' value={prenom} onChange={e => setPrenom(e.target.value)}></input>
 
                 <label for="numTel">Numéro de téléphone<span className="obligatoire">*</span></label>
-                <input name="numTel" type="tel"  pattern="[0-9]{10}" size="10" placeholder='Numéro de téléphone' value={tel} onChange={e => setTel(e.target.value)}></input>
+                <input className="inputAlertesSMS" name="numTel" type="tel"  pattern="[0-9]{10}" size="10" placeholder='Numéro de téléphone' value={tel} onChange={e => setTel(e.target.value)}></input>
 
 
 
