@@ -1,4 +1,4 @@
-import acceuil from "../assets/acceuil.jpg";
+import accueil from "../assets/accueil.jpg";
 import '../CSS/Accueil.css'
 import Actualite from "./Actualite.jsx";
 import {useEffect, useState} from "react";
@@ -39,7 +39,7 @@ export function Accueil(){
     return <>
         <div id="accueil">
             <div className="backgroundDiv">
-                <img src={acceuil} alt="Fond Démarches avec Mairie de Beuzeville" id="acceuilBackground"/>
+                <img src={accueil} alt="Fond Démarches avec Mairie de Beuzeville" id="accueilBackground"/>
             </div>
 
             <div id="enUnClic">

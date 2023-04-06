@@ -32,18 +32,26 @@
     text-align: center;
 }
 
+/*#demarchesBoxes {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));*/
+/*    !*align-items: center;*!*/
+/*    !*justify-content: center;*!*/
+/*    margin: 2rem auto;*/
+/*    column-gap: 2rem;*/
+/*    row-gap: 2rem;*/
+/*    max-width: 100%;*/
+
+
+/*}*/
+
 #demarchesBoxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    margin: 2rem auto;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    max-width: 100%;
-
-
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-gap: 1rem;*/
+    margin: auto;
 }
+
 
 .demarcheBox {
     color: #32ACDB;

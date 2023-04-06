@@ -1,4 +1,4 @@
-import acceuil from "../assets/acceuil.jpg";
+import acceuil from "../assets/accueil.jpg";
 
 import '../CSS/Accueil.css'
 import '../CSS/ToutActualite.css'
