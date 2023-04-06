@@ -1,5 +1,7 @@
 import acceuil from "../assets/acceuil.jpg";
-import '../CSS/Accueil.css'
+
+import '../CSS/Acceuil.css'
+import '../CSS/ToutActualite.css'
 import Actualite from "./Actualite.jsx";
 import {useEffect, useState} from "react";
 import {onValue, ref} from "firebase/database";
@@ -27,7 +29,8 @@ export function ToutActualite(){
     }, []);
 
     return<>
-    
+    <div id='Actualite'>
+        
     <h2 className='titreActualite'>Actualités</h2>
                 <div className='container'>
                     {projectss.map(
@@ -39,6 +42,7 @@ export function ToutActualite(){
                             </Actualite>))}
                             
                 </div>
-    
+    </div>
     </>
+    
 }
