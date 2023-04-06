@@ -25,7 +25,7 @@ export function AlertesSMS(){
 
     return <>
         <div id='sms'>
-            <div class="divBackground">
+            <div className="divBackground">
                 <img src={alertesSMSBackground} alt="Fond Alertes SMS" id="alertesSMSBackground"/>
             </div>
 
