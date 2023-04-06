@@ -1,6 +1,6 @@
 import acceuil from "../assets/acceuil.jpg";
 
-import '../CSS/Acceuil.css'
+import '../CSS/Accueil.css'
 import '../CSS/ToutActualite.css'
 import Actualite from "./Actualite.jsx";
 import {useEffect, useState} from "react";
