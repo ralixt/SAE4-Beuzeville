@@ -1,12 +1,12 @@
 import acceuil from "../assets/acceuil.jpg";
-import '../CSS/Acceuil.css'
+import '../CSS/Accueil.css'
 import Actualite from "./Actualite.jsx";
 import {useEffect, useState} from "react";
 import {onValue, ref} from "firebase/database";
 import {database} from "./Database.jsx";
 import {Link} from "react-router-dom";
 
-export function Acceuil(){
+export function Accueil(){
     const [projectss, setProjects] = useState([]);
     useEffect(() => {
         const query = ref(database, "Actualite");
