@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/NotFound.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/styleHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/styleHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/ToutAgenda.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/ToutAgenda.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <workItem from="1680339436971" duration="17962000" />
       <workItem from="1680423478166" duration="13882000" />
       <workItem from="1680447658610" duration="12000" />
-      <workItem from="1680848994251" duration="2861000" />
+      <workItem from="1680848994251" duration="5499000" />
     </task>
     <servers />
   </component>

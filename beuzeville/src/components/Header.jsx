@@ -7,12 +7,13 @@ import InstagrammeLogo from '../assets/ResauxSociaux/Instagram.svg'
 import FacebookLogo from '../assets/ResauxSociaux/Facebook.svg'
 import './../App.css'
 import '../CSS/styleHeader.css'
-import {Link} from "react-router-dom";
+
 
 
 
 
 import { Accessibilite } from './Accessibilite.jsx'
+import {Link} from "react-router-dom";
 export default function Header(props){
     const [DarkMode, setDarkMode] = useState(false)
     const [imageDark, setImageDark] = useState(reactLogos)
@@ -76,40 +77,48 @@ export default function Header(props){
     }
   
   
-  return  <div id='contenair'>
+  return  <>
+      <div id='contenair'>
 
-       
-          
-         <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
-          
-       
-      <div className="menuBoutton">
-          <span className="material-symbols-outlined blue">menu</span>
-          <p>MENU</p>
-      </div>
+
+
+          <img src={BeuzevilleLogo} alt="Le logo de Beuzeville" className='logoBeuzeville' />
+
+
+          {/*<Link to="/">Retourner sur la page d’acceuil</Link>*/}
+
+
+          <div className="menuBoutton">
+              <span className="material-symbols-outlined blue">menu</span>
+              <p>MENU</p>
+          </div>
 
 
           <div className='logoRSX'>
-          <img src={twitterLogo} alt="Le logo de Twitter"  />
-          <img src={InstagrammeLogo} alt="Le logo de Twitter"  />
-          <img src={FacebookLogo} alt="Le logo de Twitter"  />
+              <img src={twitterLogo} alt="Le logo de Twitter"  />
+              <img src={InstagrammeLogo} alt="Le logo de Twitter"  />
+              <img src={FacebookLogo} alt="Le logo de Twitter"  />
           </div>
           <div className='inputRecherche'>
-            <input type="text" value="" placeholder='Que recherchez-vous ici ?' />
-            <span className="material-symbols-outlined">search</span>
+              <input type="text" value="" placeholder='Que recherchez-vous ici ?' />
+              <span className="material-symbols-outlined">search</span>
           </div>
           <div className='logoDark'>
-            <a onClick={openModal}><span id='tailleVisibilite' className={"material-symbols-outlined"}>
+              <a onClick={openModal}><span id='tailleVisibilite' className={"material-symbols-outlined"}>
                 visibility_off
             </span>
-            </a>
-        </div>
-        <div className='Accessibilite' >
-          <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice} setImage={handleChangeImage}></Accessibilite>
-          <img src={imageDark} onClick={ToggleImageDarkMode}/>
+              </a>
+          </div>
+          <div className='Accessibilite' >
+              <Accessibilite isOpen={modalIsOpen} onRequestClose={closeModal} DarkModes={setDarkMode} setColor={handleChangeColor} setBackground={handleChangeBackgroundColor} isdark={isDark} setInterlignage={handleChangeInterlignage} setpolice={handleChangePolice} setImage={handleChangeImage}></Accessibilite>
+              <img src={imageDark} onClick={ToggleImageDarkMode}/>
 
-        </div>
-        <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police};} #divFooter{background-color: ${backgroundColor}; color:${color};} #enUnClic a{background-color: ${backgroundColor}; color:${color};}`}</style>
-       
+          </div>
+          <style>{`body {background-color: ${backgroundColor}; color:${color};  line-height: ${interlignage}; font-family: ${police};} #divFooter{background-color: ${backgroundColor}; color:${color};} #enUnClic a{background-color: ${backgroundColor}; color:${color};}`}</style>
+
       </div>
+
+
+  </>
+
 }
