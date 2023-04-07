@@ -3,6 +3,8 @@ import {database} from './Database'
 import { useState } from 'react'
 import {ref, set, push} from "firebase/database";
 import './../CSS/stylesContact.css'
+import contactImage from '../assets/contact.jpg'
+
 
 
 
@@ -37,6 +39,9 @@ export default function Contact(props){
 return <>
     <h1 id='centrerh1'>Contact</h1>
     <div>
+        <div className='imageNewsletter'>
+            <img src={contactImage} alt="image pour la page contact" />
+        </div>
         <form className='size90'>
             <section>
                 <h2 className='marginh2'>Vos Informations</h2>
