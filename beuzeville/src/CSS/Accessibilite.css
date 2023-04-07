@@ -33,7 +33,7 @@
     
     background-color: white;
     color: black;
-    width: 40rem;
+    width: 50rem;
     height: 21rem;
     border-radius: 30px;
 
@@ -52,6 +52,7 @@
 border-radius: 30px;
 height: 50%;
 padding: 1rem;
+width: 110%;
 }
 .contraste .divContraste{
     margin-top: -1.5rem;
@@ -69,10 +70,10 @@ padding: 1rem;
 
 .contraste div label span{
     display: inline-block;
-    background-color: #DBDBDB;
-    border-radius: 0.5rem;
-    padding: 0.1rem 0.1rem;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #D9D9D9;
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.3rem;
+  
     backdrop-filter: blur(25px);
 
 }
@@ -91,7 +92,7 @@ padding: 1rem;
 
 .contraste label input[type="radio"]:checked ~ span {
    
-        background-color: #5C5C5C;
+        background-color: #000000;
         color: #FFFFFF;
     
 }
