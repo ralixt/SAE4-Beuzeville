@@ -5,7 +5,9 @@ import oiseauxAgenda from './../assets/oiseaux.jpg'
 export default function Agenda(props){
     function getDate(date1, date2){
         if(date1 != date2){
-            return <p className='dateAgenda'>{date1}<br></br>↓<br></br>{date2}</p>
+            return <p className='dateAgenda'>{date1}<br></br><span class="material-symbols-outlined">
+            arrow_downward
+            </span><br></br>{date2}</p>
         }
         else{
             return <p className='dateAgenda'>{date1}</p>
