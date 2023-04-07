@@ -7,7 +7,7 @@
     background-color: #32ACDB;
     border-radius: 15px;
     border: 0px;
-    padding:  1.5em;
+    padding:  1%;
     color: white;
     max-width: 15em;
 }
@@ -63,4 +63,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -6rem;
 }

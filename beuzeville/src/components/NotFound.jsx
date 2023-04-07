@@ -11,7 +11,7 @@ export function NotFound(){
             <h1>Erreur 404</h1>
             <p>Oups ! La page que vous demandez n'a pas été trouvée…</p>
             <Link to="/" className="button">Retourner sur la page d’acceuil</Link>
-            <img src={rick} alt="Rick Roll"/>
+            {/*<img src={rick} alt="Rick Roll"/>*/}
         </div>
 
 

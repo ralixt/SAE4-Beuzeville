@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="55ba7ec7-bd92-4de2-97ae-82d1c9b96581" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/CSS/Demarches.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/Demarches.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beuzeville/src/components/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/beuzeville/src/components/NotFound.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ragee/Documents/BUT2/SAE4/Beuzeville/SAE4-Beuzeville&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rn016626/Desktop/SAE4/SAE4-Beuzeville",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ragee\Documents\BUT2\SAE4\Beuzeville\SAE4-Beuzeville\beuzeville\src\CSS" />
@@ -70,6 +73,7 @@
       <workItem from="1680339436971" duration="17962000" />
       <workItem from="1680423478166" duration="13882000" />
       <workItem from="1680447658610" duration="12000" />
+      <workItem from="1680848994251" duration="2861000" />
     </task>
     <servers />
   </component>
