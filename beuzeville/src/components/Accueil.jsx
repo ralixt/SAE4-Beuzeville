@@ -19,7 +19,7 @@ import region from "../assets/LiensUtiles/Region_Normandie.png"
 import pnr from "../assets/LiensUtiles/pnrNormande.png"
 
 export function Accueil(){
-    const [projectss, setProjects] = useState([]);
+    const [actualite, setActualite] = useState([]);
     const [agenda, setAgenda] = useState([]);
     useEffect(() => {
         const query = ref(database, "Actualite");
@@ -29,7 +29,7 @@ export function Accueil(){
 
             if (snapshot.exists()) {
                 Object.values(data).map((project) => {
-                    setProjects((projectss) => [...projectss, project]);
+                    setActualite((actualite) => [...actualite, project]);
                     //console.log(project.titre)
                 });
             }
@@ -121,17 +121,18 @@ export function Accueil(){
             <div className="actualite">
                 <h2 className='titreActualite'>Actualités</h2>
                 <div className='container'>
-                    {projectss.splice(0,4).map(
-                        (projet)=>(
-                            <Actualite titres={projet.titre}
-                                       descriptions={projet.description}
-                                       images={projet.image} 
-                                       date={projet.date}>
+                    {actualite.splice(-4,4).map(
+                        (actu)=>(
+                            <Actualite titres={actu.titre}
+                                       descriptions={actu.description}
+                                       images={actu.image} 
+                                       date={actu.date}>
                             </Actualite>))}
                             
                 </div>
-
-                <a href="TouteActualite">Voir toutes les actualites</a>
+                <div className="imageActualite">
+                         <a href="TouteActualite">Voir toutes les actualites</a>
+                </div>
 
                
             </div>

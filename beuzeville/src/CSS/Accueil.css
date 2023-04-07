@@ -68,12 +68,11 @@
 }
 
 .actualite a{
-    padding: 2%;
+    padding: 1%;
     background: #32ACDB;
-    border-radius: 20px;
+    border-radius: 0.8rem;
     text-align: center;
     justify-content: center;
-    margin-left: 30rem;
     color: white;
 }
 
@@ -93,6 +92,13 @@
     max-width: 100px;
     max-height: 100px;
     margin: 0 1rem;
+}
+
+.imageActualite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: - 3rem;
 }
 
 
