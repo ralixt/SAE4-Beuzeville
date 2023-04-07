@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+#tailleVisibilite{
+    font-size: 2.5rem;
+}
+
  .logoRSX .inputRecherche .logoDark .Accessibilite{
     
     justify-content: space-evenly;

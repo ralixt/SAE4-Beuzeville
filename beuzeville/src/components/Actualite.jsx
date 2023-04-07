@@ -34,7 +34,7 @@ export default function Actualite(props){
         <div className='template'>
             
             <div className='imageActu'>
-                <img src={props.images} alt="fdgfgd" />
+                <img src={props.images} alt={props.titres} />
                 <p>{props.descriptions}</p>
             </div>
                 

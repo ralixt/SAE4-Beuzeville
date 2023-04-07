@@ -96,10 +96,10 @@ export default function Header(props){
           </div>
           <div className='inputRecherche'>
             <input type="text" value="" placeholder='Que recherchez-vous ici ?' />
-            <span class="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">search</span>
           </div>
           <div className='logoDark'>
-            <a onClick={openModal}><span className={"material-symbols-outlined"}>
+            <a onClick={openModal}><span id='tailleVisibilite' className={"material-symbols-outlined"}>
                 visibility_off
             </span>
             </a>
