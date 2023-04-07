@@ -121,7 +121,7 @@ export function Accueil(){
             <div className="actualite">
                 <h2 className='titreActualite'>Actualités</h2>
                 <div className='container'>
-                    {projectss.splice(0,3).map(
+                    {projectss.splice(0,4).map(
                         (projet)=>(
                             <Actualite titres={projet.titre}
                                        descriptions={projet.description}
@@ -140,7 +140,7 @@ export function Accueil(){
                 <div className="actualite">
                     <h2 className='titreActualite'>Agenda</h2>
                     <div className='container'>
-                        {agenda.splice(0,3).map(
+                        {agenda.splice(0,4).map(
                             (event1)=>(
                                 <Agenda titre={event1.Titre}
                                         category={event1.Category}
