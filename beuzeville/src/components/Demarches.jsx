@@ -15,6 +15,22 @@ import guichet from '../assets/Demarches/moniteur.png'
 
 export function Demarches(){
 
+
+
+    function clickEtatCivil() {
+        const faqs = document.querySelectorAll(".contentBox");
+
+        faqs.forEach((faq) => {
+            faq.addEventListener("click",() => {
+                console.log("oui")
+                faq.classList.toggle("active");
+            })
+        })
+
+    }
+
+    console.log("ok")
+
     return <>
 
         <div id="demarches">
@@ -41,29 +57,19 @@ export function Demarches(){
                         <p>Urbanisme</p>
                     </div>
 
-                    <div className="demarcheBox">
-                        <img src={etatCivil} alt="Logo Etat Civil" className="demarcheIcon"/>
-                        <p>Etat Civil</p>
-                        <div className="demarcheListe">
-                            <ul>
-                                <li>Demande d’acte d’état civil</li>
-                                <li>Fiches d’état civil</li>
-                                <li>Mariage civil</li>
-                                <li>Certificat de vie maritale (ou concubinage)</li>
-                                <li>Pacte Civil de Solidarité (PACS)</li>
-                                <li>Livret de famille</li>
-                                <li>Déclaration de naissance</li>
-                                <li>Reconnaissance d’un enfant</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div className="contentBox">
+
+
+
+                    <div className="contentBox" onClick={clickEtatCivil}>
                         <div className="label">
                             <img src={etatCivil} alt="Logo Etat Civil" className="demarcheIcon"/>
-                            <p>Etat Civil</p>
+                            <h3>Etat Civil</h3>
+
+                            <span className="material-symbols-outlined">expand_more</span>
                         </div>
-                        <div className="contnenu">
+
+                        <div className="contenu">
                             <ul>
                                 <li>Demande d’acte d’état civil</li>
                                 <li>Fiches d’état civil</li>
@@ -74,9 +80,7 @@ export function Demarches(){
                                 <li>Déclaration de naissance</li>
                                 <li>Reconnaissance d’un enfant</li>
                             </ul>
-
                         </div>
-
                     </div>
 
 
@@ -116,7 +120,6 @@ export function Demarches(){
             </div>
 
         </div>
-        <script src="script.js"></script>
 
     </>
 

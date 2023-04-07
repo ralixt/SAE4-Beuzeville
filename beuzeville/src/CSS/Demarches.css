@@ -73,52 +73,78 @@
 
 
 
+/*.contentBox {*/
+/*    position: relative;*/
+/*    margin: 10px 20px;*/
+/*}*/
+
+/*.contentBox .label {*/
+/*    position: relative;*/
+/*    padding: 1rem;*/
+/*    background-color: #2694af;*/
+/*    border-radius: 1rem;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*    font-size: large;*/
+/*}*/
+
+/*.contentBox .label::before {*/
+/*    content: '+';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    right: 20px;*/
+/*    transform: translateY(-50%);*/
+/*    font-size: 1.5em;*/
+
+/*}*/
+
+/*.contentBox.act .label::before {*/
+/*    content: '-';*/
+/*}*/
+
+
+/*.contentBox .content {*/
+/*    position: relative;*/
+/*    background-color:antiquewhite;*/
+/*    border-bottom-left-radius: 2rem;*/
+/*    border-bottom-right-radius: 2rem;*/
+/*    height: 0;*/
+/*    overflow: hidden;*/
+/*    transition: 0.5s;*/
+/*    overflow-y: auto;*/
+/*    margin: 0 16px 0 15px;*/
+/*}*/
+
+/*.contentBox.act .content {*/
+/*    height: 900px;*/
+/*    padding: 10px;*/
+/*}*/
+
+
+
 .contentBox {
-    position: relative;
-    margin: 10px 20px;
-}
+    max-width: 700px;
+    margin-top: 2rem;
 
-.contentBox .label {
-    position: relative;
-    padding: 1rem;
-    background-color: #2694af;
-    border-radius: 1rem;
-    color: white;
+    padding-bottom: 1rem;
+
     cursor: pointer;
-    font-size: large;
-}
-
-.contentBox .label::before {
-    content: '+';
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 1.5em;
 
 }
 
-.contentBox.act .label::before {
-    content: '-';
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-
-.contentBox .content {
-    position: relative;
-    background-color:antiquewhite;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    height: 0;
+.contenu {
+    max-height: 0;
     overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
-    margin: 0 16px 0 15px;
+    transition: max-height 0.3s ease;
 }
 
-.contentBox.act .content {
-    height: 900px;
-    padding: 10px;
+.contentBox.active .contenu {
+    max-height: 300px;
 }
-
-
-
